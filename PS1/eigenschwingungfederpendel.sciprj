@@ -1,0 +1,174 @@
+SciDAVis 1.0.8 project file
+<scripting-lang>	muParser
+<windows>	4
+<table>
+13424
+<table creation_time="2015-13-03 09:47:37:816" caption_spec="%n%C{ - }%c" name="Table1" columns="5" rows="30"><comment><![CDATA[]]></comment><column creation_time="2015-13-03 09:47:37:816" caption_spec="%n%C{ - }%c" name="1" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2015-13-03 09:47:37:824" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2015-13-03 09:47:37:824" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="29">1.83*i</formula><row type="TypeDouble" index="0" invalid="no">1.8300000000000001e+00</row><row type="TypeDouble" index="1" invalid="no">3.6600000000000001e+00</row><row type="TypeDouble" index="2" invalid="no">5.4900000000000002e+00</row><row type="TypeDouble" index="3" invalid="no">7.3200000000000003e+00</row><row type="TypeDouble" index="4" invalid="no">9.1500000000000004e+00</row><row type="TypeDouble" index="5" invalid="no">1.0980000000000000e+01</row><row type="TypeDouble" index="6" invalid="no">1.2810000000000000e+01</row><row type="TypeDouble" index="7" invalid="no">1.4640000000000001e+01</row><row type="TypeDouble" index="8" invalid="no">1.6469999999999999e+01</row><row type="TypeDouble" index="9" invalid="no">1.8300000000000001e+01</row><row type="TypeDouble" index="10" invalid="no">2.0130000000000003e+01</row><row type="TypeDouble" index="11" invalid="no">2.1960000000000001e+01</row><row type="TypeDouble" index="12" invalid="no">2.3789999999999999e+01</row><row type="TypeDouble" index="13" invalid="no">2.5620000000000001e+01</row><row type="TypeDouble" index="14" invalid="no">2.7450000000000003e+01</row><row type="TypeDouble" index="15" invalid="no">2.9280000000000001e+01</row><row type="TypeDouble" index="16" invalid="no">3.1109999999999999e+01</row><row type="TypeDouble" index="17" invalid="no">3.2939999999999998e+01</row><row type="TypeDouble" index="18" invalid="no">3.4770000000000003e+01</row><row type="TypeDouble" index="19" invalid="no">3.6600000000000001e+01</row><row type="TypeDouble" index="20" invalid="no">3.8430000000000000e+01</row><row type="TypeDouble" index="21" invalid="no">4.0260000000000005e+01</row><row type="TypeDouble" index="22" invalid="no">4.2090000000000003e+01</row><row type="TypeDouble" index="23" invalid="no">4.3920000000000002e+01</row><row type="TypeDouble" index="24" invalid="no">4.5750000000000000e+01</row><row type="TypeDouble" index="25" invalid="no">4.7579999999999998e+01</row><row type="TypeDouble" index="26" invalid="no">4.9410000000000004e+01</row><row type="TypeDouble" index="27" invalid="no">5.1240000000000002e+01</row><row type="TypeDouble" index="28" invalid="no">5.3070000000000000e+01</row><row type="TypeDouble" index="29" invalid="no">5.4900000000000006e+01</row></column><column creation_time="2015-13-03 09:47:37:826" caption_spec="%n%C{ - }%c" name="2" type="TypeDouble" mode="Numeric" plot_designation="noDesignation"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2015-13-03 09:47:37:826" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2015-13-03 09:47:37:826" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">2.7999999999999998e+00</row><row type="TypeDouble" index="2" invalid="no">2.7999999999999998e+00</row><row type="TypeDouble" index="3" invalid="no">2.6000000000000001e+00</row><row type="TypeDouble" index="4" invalid="no">2.3999999999999999e+00</row><row type="TypeDouble" index="5" invalid="no">2.3999999999999999e+00</row><row type="TypeDouble" index="6" invalid="no">2.2000000000000002e+00</row><row type="TypeDouble" index="7" invalid="no">2.2000000000000002e+00</row><row type="TypeDouble" index="8" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">1.8000000000000000e+00</row></column><column creation_time="2015-13-03 09:50:10:858" caption_spec="%n%C{ - }%c" name="3" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2015-13-03 09:50:10:858" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2015-13-03 09:50:10:859" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="29">col(&quot;2&quot;)*3*5</formula><row type="TypeDouble" index="0" invalid="no">4.5000000000000000e+01</row><row type="TypeDouble" index="1" invalid="no">4.1999999999999993e+01</row><row type="TypeDouble" index="2" invalid="no">4.1999999999999993e+01</row><row type="TypeDouble" index="3" invalid="no">3.9000000000000000e+01</row><row type="TypeDouble" index="4" invalid="no">3.6000000000000000e+01</row><row type="TypeDouble" index="5" invalid="no">3.6000000000000000e+01</row><row type="TypeDouble" index="6" invalid="no">3.3000000000000000e+01</row><row type="TypeDouble" index="7" invalid="no">3.3000000000000000e+01</row><row type="TypeDouble" index="8" invalid="no">3.0000000000000000e+01</row><row type="TypeDouble" index="9" invalid="no">2.7000000000000000e+01</row><row type="TypeDouble" index="10" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="11" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="12" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="13" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="14" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="15" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="16" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="17" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="18" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="19" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="20" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="21" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="22" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="23" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="24" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="25" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="26" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="27" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="28" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="29" invalid="no">0.0000000000000000e+00</row></column><column creation_time="2015-13-03 09:50:35:267" caption_spec="%n%C{ - }%c" name="4" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2015-13-03 09:50:35:267" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2015-13-03 09:50:35:267" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="29">0.01</formula><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="1" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="3" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="4" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="5" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="6" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="7" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="8" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="9" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="10" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="11" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="12" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="13" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="14" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="15" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="16" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="17" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="18" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="19" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="20" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="21" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="22" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="23" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="24" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="25" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="26" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="27" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="28" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="29" invalid="no">1.0000000000000000e-02</row></column><column creation_time="2015-13-03 09:51:45:392" caption_spec="%n%C{ - }%c" name="5" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2015-13-03 09:51:45:392" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2015-13-03 09:51:45:393" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="29">3</formula><row type="TypeDouble" index="0" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="5" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="6" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="7" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="8" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="10" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="11" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="12" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="13" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="14" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="15" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="16" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="17" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="18" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="19" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="20" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="21" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="22" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="23" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="24" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="25" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="26" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="27" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="28" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="29" invalid="no">3.0000000000000000e+00</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width><column_width column="2">120</column_width><column_width column="3">120</column_width><column_width column="4">120</column_width></table>
+geometry	0	11	572	409	active
+
+</table>
+<table>
+14535
+<table creation_time="2015-13-03 09:58:19:673" caption_spec="%n%C{ - }%c" name="Table2" columns="5" rows="30"><comment><![CDATA[]]></comment><column creation_time="2015-13-03 09:58:19:673" caption_spec="%n%C{ - }%c" name="1" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2015-13-03 09:58:19:673" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2015-13-03 09:58:19:674" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="26">1.82*i</formula><row type="TypeDouble" index="0" invalid="no">1.8200000000000001e+00</row><row type="TypeDouble" index="1" invalid="no">3.6400000000000001e+00</row><row type="TypeDouble" index="2" invalid="no">5.4600000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">7.2800000000000002e+00</row><row type="TypeDouble" index="4" invalid="no">9.0999999999999996e+00</row><row type="TypeDouble" index="5" invalid="no">1.0920000000000000e+01</row><row type="TypeDouble" index="6" invalid="no">1.2740000000000000e+01</row><row type="TypeDouble" index="7" invalid="no">1.4560000000000000e+01</row><row type="TypeDouble" index="8" invalid="no">1.6379999999999999e+01</row><row type="TypeDouble" index="9" invalid="no">1.8199999999999999e+01</row><row type="TypeDouble" index="10" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="11" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="12" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="13" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="14" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="15" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="16" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="17" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="18" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="19" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="20" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="21" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="22" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="23" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="24" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="25" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="26" invalid="yes">0.0000000000000000e+00</row></column><column creation_time="2015-13-03 09:58:19:675" caption_spec="%n%C{ - }%c" name="2" type="TypeDouble" mode="Numeric" plot_designation="noDesignation"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2015-13-03 09:58:19:675" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2015-13-03 09:58:19:675" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">2.7999999999999998e+00</row><row type="TypeDouble" index="1" invalid="no">2.6000000000000001e+00</row><row type="TypeDouble" index="2" invalid="no">2.3999999999999999e+00</row><row type="TypeDouble" index="3" invalid="no">2.2000000000000002e+00</row><row type="TypeDouble" index="4" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="5" invalid="no">1.8000000000000000e+00</row><row type="TypeDouble" index="6" invalid="no">1.8000000000000000e+00</row><row type="TypeDouble" index="7" invalid="no">1.6000000000000001e+00</row><row type="TypeDouble" index="8" invalid="no">1.3999999999999999e+00</row><row type="TypeDouble" index="9" invalid="no">1.3999999999999999e+00</row><row type="TypeDouble" index="10" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="11" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="12" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="13" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="14" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="15" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="16" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="17" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="18" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="19" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="20" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="21" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="22" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="23" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="24" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="25" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="26" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="27" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="28" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="29" invalid="yes">0.0000000000000000e+00</row></column><column creation_time="2015-13-03 10:02:21:044" caption_spec="%n%C{ - }%c" name="3" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2015-13-03 10:02:21:044" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2015-13-03 10:02:21:045" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="29">ln(col(&quot;2&quot;)*15)</formula><row type="TypeDouble" index="0" invalid="no">3.7376696182833684e+00</row><row type="TypeDouble" index="1" invalid="no">3.6635616461296463e+00</row><row type="TypeDouble" index="2" invalid="no">3.5835189384561099e+00</row><row type="TypeDouble" index="3" invalid="no">3.4965075614664802e+00</row><row type="TypeDouble" index="4" invalid="no">3.4011973816621555e+00</row><row type="TypeDouble" index="5" invalid="no">3.2958368660043291e+00</row><row type="TypeDouble" index="6" invalid="no">3.2958368660043291e+00</row><row type="TypeDouble" index="7" invalid="no">3.1780538303479458e+00</row><row type="TypeDouble" index="8" invalid="no">3.0445224377234230e+00</row><row type="TypeDouble" index="9" invalid="no">3.0445224377234230e+00</row><row type="TypeDouble" index="10" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="11" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="12" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="13" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="14" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="15" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="16" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="17" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="18" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="19" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="20" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="21" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="22" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="23" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="24" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="25" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="26" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="27" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="28" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="29" invalid="no">0.0000000000000000e+00</row></column><column creation_time="2015-13-03 10:03:41:090" caption_spec="%n%C{ - }%c" name="4" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2015-13-03 10:03:41:090" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2015-13-03 10:03:41:091" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="26">0.01</formula><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="1" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="3" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="4" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="5" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="6" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="7" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="8" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="9" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="10" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="11" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="12" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="13" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="14" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="15" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="16" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="17" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="18" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="19" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="20" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="21" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="22" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="23" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="24" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="25" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="26" invalid="yes">0.0000000000000000e+00</row></column><column creation_time="2015-13-03 10:04:01:337" caption_spec="%n%C{ - }%c" name="5" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2015-13-03 10:04:01:337" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2015-13-03 10:04:01:337" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="29">ln(3)</formula><row type="TypeDouble" index="0" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="1" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="2" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="3" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="4" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="5" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="6" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="7" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="8" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="9" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="10" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="11" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="12" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="13" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="14" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="15" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="16" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="17" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="18" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="19" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="20" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="21" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="22" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="23" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="24" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="25" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="26" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="27" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="28" invalid="no">1.0986122886681098e+00</row><row type="TypeDouble" index="29" invalid="no">1.0986122886681098e+00</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width><column_width column="2">120</column_width><column_width column="3">120</column_width><column_width column="4">354</column_width></table>
+geometry	326	1	689	409	
+
+</table>
+<multiLayer>
+Graph1	1	1	3/13/15 9:53 AM
+geometry	578	84	508	428	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	434	296
+Alignement	0	0
+<graph>
+ggeometry	5	5	489	369
+PlotTitle	100mA Gedämpfte Schwingung	#000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	X Axis Title	Y Axis Title			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+TitleFont	Sans	13	75	0	0	0
+ScaleFont0	Sans	11	75	0	0	0
+ScaleFont1	Sans	11	75	0	0	0
+ScaleFont2	Sans	11	75	0	0	0
+ScaleFont3	Sans	11	75	0	0	0
+AxisFont0	Sans	11	50	0	0	0
+AxisFont1	Sans	11	50	0	0	0
+AxisFont2	Sans	11	50	0	0	0
+AxisFont3	Sans	11	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#1a1a1a	#1a1a1a	#1a1a1a	#1a1a1a
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	Table1_1	Table1_3	1	0	0	0	1	7	1	0	0	0	0	0	1	2	0	0	9	1
+ErrorBars	0	Table1_1	Table1_3	Table1_4	1	8	#000000	1	1	1
+ErrorBars	1	Table1_1	Table1_3	Table1_5	1	8	#000000	1	1	1
+FunctionCurve	0,LinearFit1,x,1.83,18.3	2			0	1	1	0	1	0	0	0	19	0	0	0	0	2	0	162436528	343597384	1
+<formula>
+B=46.6
+A=-1.02334823646299
+
+A*x+B
+</formula>
+scale	0	20	50	0	8	5	0	0
+scale	1	20	50	0	8	5	0	0
+scale	2	0	20	0	8	5	0	0
+scale	3	0	20	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+</graph>
+</multiLayer>
+<multiLayer>
+Graph2	1	1	3/13/15 10:23 AM
+geometry	58	0	508	428	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	429	296
+Alignement	0	0
+<graph>
+ggeometry	5	5	489	369
+PlotTitle	Title	#000000	4228
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	X Axis Title	Y Axis Title			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+TitleFont	Sans	13	75	0	0	0
+ScaleFont0	Sans	11	75	0	0	0
+ScaleFont1	Sans	11	75	0	0	0
+ScaleFont2	Sans	11	75	0	0	0
+ScaleFont3	Sans	11	75	0	0	0
+AxisFont0	Sans	11	50	0	0	0
+AxisFont1	Sans	11	50	0	0	0
+AxisFont2	Sans	11	50	0	0	0
+AxisFont3	Sans	11	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#1a1a1a	#1a1a1a	#1a1a1a	#1a1a1a
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	Table2_1	Table2_3	1	0	0	0	1	7	1	0	0	0	0	0	1	2	0	0	9	1
+ErrorBars	0	Table2_1	Table2_3	Table2_4	1	8	#000000	1	1	1
+ErrorBars	1	Table2_1	Table2_3	Table2_5	1	8	#000000	1	1	1
+FunctionCurve	0,LinearFit1,x,1.82,18.2	2			0	1	1	0	1	0	0	0	19	0	0	0	0	2	0	164082768	1374389535	1
+<formula>
+B=3.81766599926239
+A=-0.0443100140741531
+
+A*x+B
+</formula>
+scale	0	1.5	5	0	8	5	0	0
+scale	1	1.5	5	0	8	5	0	0
+scale	2	0	20	0	8	5	0	0
+scale	3	0	20	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<legend>	0.475059382422803	4.88013698630137	Sans	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Table2_3	\c{4}LinearFit1	</legend>
+</graph>
+</multiLayer>
+<log>
+[3/13/15 9:53 AM	Plot: ''Graph1'']
+Linear Regression fit of dataset: Table1_3, using function: A*x+B
+Y standard errors: Associated dataset (Table1_5)
+From x = 1.83 to x = 18.3
+B (y-intercept) = 46.6 +/- 2.04939015319192
+A (slope) = -1.02334823646299 +/- 0.180485863135469
+--------------------------------------------------------------------------------------
+Chi^2/doF = 0.0939393939393939
+R^2 = 0.977157594178871
+---------------------------------------------------------------------------------------
+[3/13/15 10:06 AM	Plot: ''Graph2'']
+Linear Regression fit of dataset: Table2_3, using function: A*x+B
+Y standard errors: Associated dataset (Table2_5)
+From x = 1.82 to x = 18.2
+B (y-intercept) = 43.2 +/- 2.04939015319192
+A (slope) = -1.31868131868132 +/- 0.181477543702147
+--------------------------------------------------------------------------------------
+Chi^2/doF = 0.15
+R^2 = 0.977777777777778
+---------------------------------------------------------------------------------------
+[3/13/15 10:17 AM	Plot: ''Graph2'']
+Linear Regression fit of dataset: Table2_3, using function: A*x+B
+Y standard errors: Unknown
+From x = 7.28 to x = 18.2
+B (y-intercept) = 3.79769741382391 +/- 0.0500116934684487
+A (slope) = -0.0429177451876574 +/- 0.00377452440596433
+--------------------------------------------------------------------------------------
+Chi^2/doF = 0.00132137255736412
+R^2 = 0.962765856659858
+---------------------------------------------------------------------------------------
+[3/13/15 10:24 AM	Plot: ''Graph2'']
+Linear Regression fit of dataset: Table2_3, using function: A*x+B
+Y standard errors: Associated dataset (Table2_5)
+From x = 1.82 to x = 18.2
+B (y-intercept) = 3.81766599926239 +/- 0.750495068857354
+A (slope) = -0.0443100140741531 +/- 0.066457819876161
+--------------------------------------------------------------------------------------
+Chi^2/doF = 0.000718147179730812
+R^2 = 0.987241046499994
+---------------------------------------------------------------------------------------
+</log>
