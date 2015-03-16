@@ -93,7 +93,7 @@
 \end{verbatim}
 							%Name des Betreuers, das Praktikum betreute.
 			\begin{flushleft}
-			\LARGE{\textbf{Betreuer:}}	\Large{....................................................................................................}	
+			\LARGE{\textbf{Betreuer:}}	\Large{Witlef WIECZOREK}	
 			\end{flushleft}
 			
 \newpage
@@ -171,7 +171,6 @@ Gekoppelte Pendel tauschen periodisch ihre Schwingungsenergie aus. Die rücktrei
 \end{subfigure}
 \caption{\textit{Links:} Gekoppelte Pendel mit Kopplungslänge $l$, Pendellänge $L$ und Kopplungsgewicht $G$. \textit{Rechts:} Schwebung gekoppelter Pendel.}
 \end{figure}
-
 Beim gekoppelten Pendel gibt es drei Fälle zu unterscheiden:\\
 Die \textbf{gleichsinnige Schwingung}, falls beide Pendel gleichzeitig in die gleiche Richtung angestoßen werden.\\
 Die \textbf{gegensinnige Schwingung}, falls beide Pendel gleichzeitig in entgegengesetzter Richtung angestoßen werden.\\
@@ -180,10 +179,10 @@ Der \textbf{Schwebungsfall}, falls nur ein Pendel angestoßen wird, während sic
 Für den Schwebungsfall sind die Frequenzen:
 $$\omega_S=\frac{\omega_1 - \omega_0}{2}$$
 $$\omega_S=\frac{\omega_1 + \omega_0}{2}$$
-wo $\omega_0=\sqrt{D/J}$ und $\omega_1=\sqrt{(D+2D*)/J}$ mit dem Richtmoment aufgrund der Schwerkraft $D$, dem Richtmoment aufgrund der Kopplung $D*$ und dem Trägheitsmoment $J$.\\
+wo $\omega_0=\sqrt{D/J}$ und $\omega_1=\sqrt{(D+2D^*)/J}$ mit dem Richtmoment aufgrund der Schwerkraft $D$, dem Richtmoment aufgrund der Kopplung $D^*$ und dem Trägheitsmoment $J$.\\
 \\
 Der Kopplungsgrad kann dann durch die Eigenfrequenzen oder aus den Frequenzen der Schwebung berechnet werden:
-$$K_{eigen}=\frac{\omega_1^2-\omega_0^2}{\omega_1^2+\omega_0^2}=$$
+$$K_{eigen}=\frac{\omega_1^2-\omega_0^2}{\omega_1^2+\omega_0^2}$$
 $$K_{schwebung}=\frac{2\omega_S \omega_2}{\omega_S^2 + \omega_2^2}$$
 \\
 Die Schwebungsdauer $T_S$ zwischen zwei Stillständen ist:
@@ -197,51 +196,31 @@ $$T_S=\pi/\omega_S$$
 
 \subsection{Drehpendel}
 %Bestimmen Sie die Eigenfrequenz $\omega_0$ des Pendels.
-Die Eigenfrequenz des Pendels:
-$$\omega_0=\sqrt{\frac{D}{m}}=$$
+Messungen beim gedämpften, ungetriebenen Pendel mit zwei verschiedenen Dämpfungen:
+
+Der Strom durch die Wirbelstrombremse wurde mit einer Gleichstrom-Messungenauigkeit von $2,5\%$ vom Skalenendwert ($500mA$) bestimmt:\\
 \\
-%Bestimmen Sie die Dämpfungskonstante $\delta$ und das zugehörige logarithmische Dekrement $\Lambda$.
-Die Dämpfungskonstante ist
-$$\delta_1=k/2m=$$
+Die Schwingungsdauer bei $I=(100\pm 10) \si{mA}$:\\
+$T_1=(1.83 \pm 0.01)\si{s}$\\
+Die daraus berechnete Eigenfrequenz:
+$$\omega_0=(3.43 \pm 0.02)$$
+Die Dämpfungskonstante wurde mittels linearer Regression bestimmt als:
+$$\delta_1=(-1.02 \pm 0.18)$$
 \\
-Mit \ref{dekrement} Können wir das logarithmische Dämpfungsdekrement $\Lambda$ bestimmen:
-$$\Lambda=ln\frac{x(nT)}{x((n+1)T)}=\delta T=$$
-\\
-%Nehmen Sie die Amplitudenresonanzkurve für einen Erregerfrequenzbereich $0.2-0.9\si{Hz}$ auf.
-Die Erregerfrequenz des Motors:
-$$\omega=$$
-\\
-Die Amplitudenresonanzkurve:
-$$A^2=\frac{F_0^2}{m^2(\omega_0^2-\omega^2)^2+k^2\omega^2}=$$
-\\
+Die Schwingungsdauer bei $I=(150\pm 10) \si{mA}$:\\
+$T_2=(1.82 \pm 0.01)\si{s}$\\
+Die daraus berechnete Eigenfrequenz:
+$$\omega_0=(3.45 \pm 0.02)$$
+Mit der Dämpfungskonstante:
+$$\delta_2=(-0.0429 \pm 0.0038)$$
+
+
 %Bestimmen Sie die Dämpfungskonstante $\delta$ aus der Halbwertsbreite der Resonanzkurve und vergleichen Sie das Ergebnis mit dem von Aufgabe 2.
-Die Halbwertsbreite:
-$$\Delta \omega=$$
-\\
-Die Dämpfungskonstante $\delta$ bestimmt aus der Halbwertsbreite der Resonanzkurve:
-$$\delta_2=\frac{\Delta \omega}{2}=$$
-\\
+
 %Bestimmen sie Q für beide Dämpfungen und vergleichen Sie die Werte.
-Der Gütefaktor $Q$:
-$$Q=\omega_0/2\delta=\omega_0/\Delta \omega=$$
-
-Gleichstrommessungenauigkeit: 2,5\% vom Skalenendwert (500mA)\\
-$(100\pm 10) \si{mA}$
-
-SChwingungsdauer:\\
-$T_1=(1.83 \pm 0.01)\si{s}$
-Eigenfrequenz $\omega_0$:\\
-$\omega_0=(3.43 \pm 0.01)$
-
-$\delta_1=-1.02 \pm 0.18$
-Messung 2
-$(150\pm10) \si{mA}$
-SChwingungsdauer:\\
-$T_2=(1.82 \pm 0.01)\si{s}$
-
-$\delta_2= -0.0429 \pm 0.0038$
-
-Erregerfrequenz 1: 0.8417 Hz
+Der Gütefaktor $Q$:\\
+$$Q_1=\frac{\omega_0}{2\delta_1}=(1.68 \pm 0.32)$$
+$$Q_2=\frac{\omega_0}{2\delta_2}=(40.2 \pm 3.9 )$$
 
 \subsection{Gekoppelte Pendel}
 
@@ -257,54 +236,84 @@ $L=(1035 \pm 1)\si{mm}$\\
 %Untersuchen Sie für jedes Gewicht die gleichsinnige und gegensinnige Schwingung sowie den Schwebungsfall.
 \subsubsection{Gewicht 1}
 Gleichsinnige Schwingung:\\
-$T_0=(1.96 \pm 0.01)\si{s}$
-$\omega_{gl}=\omega_0=3.2057$
-
+$T_0=(1.96 \pm 0.01)\si{s}$\\
+$\omega_{gl}=\omega_0=(3.21 \pm 0.02)\si{s^{-1}}$\\
+\\
 Gegensinnige Schwingung:\\
-$T_1=(1.78 \pm 0.01)\si{s}$
-$\omega_{geg}=\omega_1=3.5299$
-
+$T_1=(1.78 \pm 0.01)\si{s}$\\
+$\omega_{geg}=\omega_1=(3.53 \pm 0.02)\si{s^{-1}}$\\
+\\
 Schwebung über 5 Stillstände:\\
-$T_S=(21.52 \pm 0.01)\si{s}$
-$T_2=(1.89 \pm 0.01)\si{s}$
-$\omega_S=0.1459$
-$\omega_2=3.3127$
-
+$T_S=(21.52 \pm 0.01)\si{s}$\\
+$T_2=(1.89 \pm 0.01)\si{s}$\\
+$\omega_S=(0.15 \pm 0.02)\si{s^{-1}}$\\
+$\omega_2=(3.31 \pm 0.02)\si{s^{-1}}$\\
+\\
 Berechnete Schwebungsfrequenz:\\
-$\omega_S=0.162$
-$\omega_2=3.367$
-
+$\omega_S=(0.162 \pm 0.001)\si{s^{-1}}$\\
+$\omega_2=(3.37 \pm 0.02)\si{s^{-1}}$\\
+\\
 \subsubsection{Gewicht 2}
 Gleichsinnige Schwingung:\\
-$T_0=(1.97 \pm 0.01)\si{s}$
-$\omega_{gl}=\omega_0=3.189$
-
+$T_0=(1.97 \pm 0.01)\si{s}$\\
+$\omega_{gl}=\omega_0=(3.19 \pm 0.02)\si{s^{-1}}$\\
+\\
 Gegensinnige Schwingung:\\
-$T_1=(1.897 \pm 0.01)\si{s}$
-$\omega_{geg}=\omega_1=3.312$
-
+$T_1=(1.90 \pm 0.01)\si{s}$\\
+$\omega_{geg}=\omega_1=(3.31 \pm 0.02)\si{s^{-1}}$\\
+\\
 Schwebung über 5 Stillstände:\\
-$T_S=(50.67 \pm 0.01)\si{s}$
-$T_2=(1.95 \pm 0.01)\si{s}$
-$\omega_S=0.062$
-$\omega_2=3.222$
-
+$T_S=(50.67 \pm 0.01)\si{s}$\\
+$T_2=(1.95 \pm 0.01)\si{s}$\\
+$\omega_S=(0.062 \pm 0.001)\si{s^{-1}}$\\
+$\omega_2=(3.22 \pm 0.02)\si{s^{-1}}$\\
+\\
 Berechnete Schwebungsfrequenz:\\
-$\omega_S=0.0615$
-$\omega_2=3.2505$
-
+$\omega_S=(0.062 \pm 0.018)\si{s^{-1}}$\\
+$\omega_2=(3.25 \pm 0.14)\si{s^{-1}}$\\
+\\
 %Berechnen Sie den Kopplungsgrad K aus den Eigenfrequenzen sowie aus den Frequenzen der Schwebung.
-Kopplungsgrad für Gewicht 1:\\
-$K_{1-eigen}=\frac{\omega_1^2-\omega_0^2}{\omega_1^2+\omega_0^2}=0.09603$
-$K_{1-schwebung}=\frac{2\omega_S \omega_2}{\omega_S^2 + \omega_2^2}=0.08796$
 
-Kopplungsgrad für Gewicht 2:
-$K_{2-eigen}=\frac{\omega_1^2-\omega_0^2}{\omega_1^2+\omega_0^2}=0.0378$
-$K_{2-schwebung}=\frac{2\omega_S \omega_2}{\omega_S^2 + \omega_2^2}=0.03847$
+\subsubsection{Kopplungsgrade}
+
+Kopplungsgrad für Gewicht 1:\\
+$K_{1-eigen}=\frac{\omega_1^2-\omega_0^2}{\omega_1^2+\omega_0^2}=(0.096 \pm 0.011)$\\
+$K_{1-schwebung}=\frac{2\omega_S \omega_2}{\omega_S^2 + \omega_2^2}=(0.088 \pm 0.001)$\\
+\\
+Kopplungsgrad für Gewicht 2:\\
+$K_{2-eigen}=\frac{\omega_1^2-\omega_0^2}{\omega_1^2+\omega_0^2}=(0.038 \pm 0.011)$\\
+$K_{2-schwebung}=\frac{2\omega_S \omega_2}{\omega_S^2 + \omega_2^2}=(0.038 \pm 0.001)$\\
 
 
 \subsection{Dopplerverschiebung}
+Grundfrequenz:\\
+$\nu_0=(20.78 \pm 0.01)\si{kHz}$\\
+Unsicherheit wegen Schwankung\\
+\\
+Länge der Kartonkarte:\\
+$l_{Karton}=(27.40 \pm 0.05)\si{mm}$\\
 
+Zeit Kartonkarte:\\
+$t=(463.198 \pm 0.001)\si{ms}$\\
+
+$\Delta t=772ms$ für 3 maxima
+
+t=500.545 ms
+dt=576.0ms für 2 minima
+
+t=886.344ms
+dt=1.020s für 2 minima
+
+t=1334.829ms
+dt=1.450s für 2 minima
+
+t=1593.789ms
+dt=1.860s für 2 minima
+
+t=479.972ms
+dt=1.050s für 4 minima
+
+48.40 microsekunden / 20.66kHz corresponds to 20.731kHz auf dem Frequenzzähler
 
 \section{Diskussion}
 \subsection*{Drehpendel}
@@ -315,8 +324,11 @@ $\delta_1=$, $\delta_2=$
 
 \subsection*{Gekoppelte Pendel}
 %Vergleichen und diskutieren Sie die Ergebnisse für die gewonnenen Kopplungsgrade.
+Beim leichteren Gewicht konnten wir kürzere Frequenzen feststellen, aber auch eine signifikant längere Schwebungsdauer.
 \textbf{Kopplungsgrade:}\\
-$K_{eigen}=$, $K_{schwebung}=$
+Die aus verschiedenen Größen berechneten Werte für die Kopplungsgrade $K_{1-eigen}=(0.096 \pm 0.011)$, $K_{1-schwebung}=(0.088 \pm 0.001)$ bzw. $K_{1-eigen}=(0.038 \pm 0.011)$, $K_{1-schwebung}=(0.038 \pm 0.001)$ stimmen innerhalb der Unsicherheiten überein.
+Durch die längere Messdauer sind die durch die Schwebungsdauer berechneten Werte genauer.
+
 \subsection*{Dopplerverschiebung}
 
 %Bestimmen Sie die Grundfrequenz $\nu_0$ genau.
