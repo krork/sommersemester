@@ -304,6 +304,27 @@ $K_{2-schwebung}=\frac{2\omega_S \omega_2}{\omega_S^2 + \omega_2^2}=0.03847$\\
 
 
 \subsection{Dopplerverschiebung}
+Wir finden einen linearen Zusammenhang zwischen der Geschwindigkeit der Schallquelle v und einem 
+\begin{equation}
+\label{frequenzlinear}
+\frac{\nu_0-\nu}{\nu}=\frac{1}{c}\cdot v
+\end{equation}
+\\
+Dabei bekommen wir $\nu$ über die gemessene Schwebungsdauer$T_S$:
+\begin{equation}
+\frac{1}{T_S}=\Delta \nu
+\end{equation}
+
+\begin{equation}
+\nu=\nu_0+\Delta \nu = \nu_0 + \frac{1}{T_S}
+\end{equation}
+
+Die Steigung aus dem linearen Fit entspricht dann $\frac{1}{c}$; ihr Kehrwert also der gesuchten Schallgeschwindigkeit c.
+
+\begin{figure}
+\includegraphics[scale=0.4,angle=-90]{dopplerfit.eps}
+\end{figure}
+
 Grundfrequenz:\\
 $\nu_0=(20.78 \pm 0.01)\si{kHz}$\\
 Unsicherheit wegen Schwankung\\
@@ -330,7 +351,10 @@ dt=1.860s für 2 minima
 
 t=479.972ms
 dt=1.050s für 4 minima
-
+\begin{equation}
+\label{Schallgeschw}
+c=\frac{\nu\cdot v}{\nu_{0}-\nu}
+\end{equation}
 48.40 microsekunden / 20.66kHz corresponds to 20.731kHz auf dem Frequenzzähler
 
 \section{Diskussion}
