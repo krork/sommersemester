@@ -206,10 +206,28 @@ Wir haben zwei Lautsprecher, die wir beide die gleiche Frequenz im Bereich von 2
 \section{Messergebnisse}
 
 \subsection{Drehpendel}
+%Messungen beim gedämpften, ungetriebenen Pendel mit zwei verschiedenen Dämpfungen:\\
+%\\
+%Der Strom durch die Wirbelstrombremse wurde mit einer Gleichstrom-Messungenauigkeit von $2,5\%$ %vom Skalenendwert ($500mA$) bestimmt:\\
+%\\
+%Die Schwingungsdauer bei $I=(100\pm 10) \si{mA}$:\\
+%$T_1=(1.83 \pm 0.01)\si{s}$\\
+%Die daraus berechnete Eigenfrequenz:
+%$$\omega_0=(3.43 \pm 0.02)$$
+%Die Dämpfungskonstante wurde mittels linearer Regression bestimmt als:
+%$$\delta_1=(-1.02 \pm 0.18)$$
+%\\
+%Die Schwingungsdauer bei $I=(150\pm 10) \si{mA}$:\\
+%$T_2=(1.82 \pm 0.01)\si{s}$\\
+%Die daraus berechnete Eigenfrequenz:
+%$$\omega_0=(3.45 \pm 0.02)$$
+%Mit der Dämpfungskonstante:
+%$$\delta_2=(-0.0429 \pm 0.0038)$$
+
 Gleichstrommessungenauigkeit für den Strom, der mittels des Elektromagneten die Dämpfung verursacht: 2,5\% vom Skalenendwert (500mA)\\
 %Bestimmen Sie die Eigenfrequenz $\omega_0$ des Pendels.
 Die Eigenfrequenz des Pendels:
-$$\omega_0=\sqrt{\frac{D}{m}}=0.55 \pm 0.01 Hz$$
+$$\omega_0=\sqrt{\frac{D}{m}}=(0.55 \pm 0.01)\si{Hz}$$
 \\
 %Bestimmen Sie die Dämpfungskonstante $\delta$ und das zugehörige logarithmische Dekrement $\Lambda$.
 %Die Dämpfungskonstante ist
@@ -258,7 +276,6 @@ Durch die linearen Fits und Schwingungsdauern von 1.82s bei 100mA bzw 1.83s bei 
 \end{subfigure}
 \end{figure}
 \subsection{Gekoppelte Pendel}
-
 %Erfragen Sie zwei verschiedene Gewichte G und eine Kopplungslänge l vom Betreuer.
 Die beiden Gewichte:\\
 $G_1=(297.4 \pm 0.1)\si{g}$\\
@@ -272,50 +289,51 @@ $L=(1035 \pm 1)\si{mm}$\\
 \subsubsection{Gewicht 1}
 Gleichsinnige Schwingung:\\
 $T_0=(1.96 \pm 0.01)\si{s}$\\
-$\omega_{gl}=\omega_0=3.2057$\\
+$\omega_{gl}=\omega_0=(3.21 \pm 0.02)\si{s^{-1}}$\\
 \\
 Gegensinnige Schwingung:\\
 $T_1=(1.78 \pm 0.01)\si{s}$\\
-$\omega_{geg}=\omega_1=3.5299$\\
+$\omega_{geg}=\omega_1=(3.53 \pm 0.02)\si{s^{-1}}$\\
 \\
 Schwebung über 5 Stillstände:\\
 $T_S=(21.52 \pm 0.01)\si{s}$\\
 $T_2=(1.89 \pm 0.01)\si{s}$\\
-$\omega_S=0.1459$\\
-$\omega_2=3.3127$\\
+$\omega_S=(0.15 \pm 0.02)\si{s^{-1}}$\\
+$\omega_2=(3.31 \pm 0.02)\si{s^{-1}}$\\
 \\
 Berechnete Schwebungsfrequenz:\\
-$\omega_S=0.162$\\
-$\omega_2=3.367$\\
+$\omega_S=(0.162 \pm 0.001)\si{s^{-1}}$\\
+$\omega_2=(3.37 \pm 0.02)\si{s^{-1}}$\\
 \\
 \subsubsection{Gewicht 2}
 Gleichsinnige Schwingung:\\
 $T_0=(1.97 \pm 0.01)\si{s}$\\
-$\omega_{gl}=\omega_0=3.189$\\
+$\omega_{gl}=\omega_0=(3.19 \pm 0.02)\si{s^{-1}}$\\
 \\
 Gegensinnige Schwingung:\\
-$T_1=(1.897 \pm 0.01)\si{s}$\\
-$\omega_{geg}=\omega_1=3.312$\\
+$T_1=(1.90 \pm 0.01)\si{s}$\\
+$\omega_{geg}=\omega_1=(3.31 \pm 0.02)\si{s^{-1}}$\\
 \\
 Schwebung über 5 Stillstände:\\
 $T_S=(50.67 \pm 0.01)\si{s}$\\
 $T_2=(1.95 \pm 0.01)\si{s}$\\
-$\omega_S=0.062$\\
-$\omega_2=3.222$\\
+$\omega_S=(0.062 \pm 0.001)\si{s^{-1}}$\\
+$\omega_2=(3.22 \pm 0.02)\si{s^{-1}}$\\
 \\
 Berechnete Schwebungsfrequenz:\\
-$\omega_S=0.0615$\\
-$\omega_2=3.2505$\\
+$\omega_S=(0.062 \pm 0.018)\si{s^{-1}}$\\
+$\omega_2=(3.25 \pm 0.14)\si{s^{-1}}$\\
 \\
 %Berechnen Sie den Kopplungsgrad K aus den Eigenfrequenzen sowie aus den Frequenzen der Schwebung.
+
+\subsubsection{Kopplungsgrade}
 Kopplungsgrad für Gewicht 1:\\
-$K_{1-eigen}=\frac{\omega_1^2-\omega_0^2}{\omega_1^2+\omega_0^2}=0.09603$\\
-$K_{1-schwebung}=\frac{2\omega_S \omega_2}{\omega_S^2 + \omega_2^2}=0.08796$\\
+$K_{1-eigen}=\frac{\omega_1^2-\omega_0^2}{\omega_1^2+\omega_0^2}=(0.096 \pm 0.011)$\\
+$K_{1-schwebung}=\frac{2\omega_S \omega_2}{\omega_S^2 + \omega_2^2}=(0.088 \pm 0.001)$\\
 \\
 Kopplungsgrad für Gewicht 2:\\
-$K_{2-eigen}=\frac{\omega_1^2-\omega_0^2}{\omega_1^2+\omega_0^2}=0.0378$\\
-$K_{2-schwebung}=\frac{2\omega_S \omega_2}{\omega_S^2 + \omega_2^2}=0.03847$\\
-
+$K_{2-eigen}=\frac{\omega_1^2-\omega_0^2}{\omega_1^2+\omega_0^2}=(0.038 \pm 0.011)$\\
+$K_{2-schwebung}=\frac{2\omega_S \omega_2}{\omega_S^2 + \omega_2^2}=(0.038 \pm 0.001)$\\
 
 \subsection{Dopplerverschiebung}
 Wir finden einen linearen Zusammenhang zwischen der Geschwindigkeit der Schallquelle v und einem 
