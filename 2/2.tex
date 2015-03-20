@@ -71,7 +71,7 @@
 \end{verbatim}
 							%Namen der Protokollschreiber
 		\begin{flushleft}
-			\textbf{\Large{Bachleitner Veronika, Grafendorfer Erik}} 
+			\textbf{\Large{Grafendorfer Erik}} 
 			\end{flushleft}
 
 \begin{verbatim}
@@ -93,12 +93,12 @@
 \end{verbatim}
 							%Name des Betreuers, das Praktikum betreute.
 			\begin{flushleft}
-			\LARGE{\textbf{Betreuer:\Large{ }}}		
+			\LARGE{\textbf{Betreuer:\Large{Puchegger oder Fuith}}}		
 			\end{flushleft}
 			
-\begin{figure}
-\includegraphics[angle=-90]{}
-\end{figure}
+%\begin{figure}
+%\includegraphics[angle=-90]{}
+%\end{figure}
 \section{Aufgabenstellung}
 An Kondensatoren und Spulen in verschiedenen Serienschaltungen sollen die Effekte eines Schwingkreises untersucht werden, wie das Abklingen, das durch Energieverlust an Leitungswärme entsteht, oder die Effekte, die durch anschließen eines zweiten Schwingkreises entstehen: Erzwungene Schwingungen und Schwebung.
 \section{Theorie}
@@ -114,8 +114,94 @@ L\frac{d^2q}{dt^2}+RI-\frac{q}{C}=0
 
 \section{Ergebnisse}
 \subsection{Freie Schwingungen}
+Ohne Dämpfung:
+
+11 Maxima, 2.000ms
+T=200$\mu$s
+
+From x = 200 to x = 1,800
+B (y-intercept) = 3.92675897863831 +/- 0.00339724781345603
+A (slope) = -0.0002725267804781 +/- 3.01853389465532e-06
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.18677124956392e-05
+R^2 = 0.99914197688524
+
+Mit Dämpfung:
+
+immer Condensator C2 verwendet; R: 2,2 +- 10\% Ohm 
+
+t=200micros
+
+\begin{figure}
+\includegraphics[angle=-90]{}
+\end{figure}
+
 \subsection{Erzwungene Schwingungen}
+ungedämpft:
+Resonanzfrequenz 5.00 kHz am FreqGen, laut Oszi 5.00548 kHz
+Amplitude 496mV
+5.43 80
+5.22 112
+5.11 224
+5.07 296
+5.05 368
+5.04 424
+5.00 496
+4.98 440
+4.96 	352
+4.91 192
+4.75 96
+4.30 40
+gedämpft:
+scidavis
+
+\subsection{Phasenverschiebung}
+Bei Dämpfung (möglw zu verschmeissen:)
+bei 1.2 $\omega_{max}$: 0
+bei $\omega_{max}$: Pi/2
+bei 0.8 $\omega_{max}$: Pi
+
+Ohne Dämpfung:
+
+bei 1.2 $\omega_{max}$: 0
+bei $\omega_{max}$: Pi/2
+bei 0.8 $\omega_{max}$: Pi
+
+
 \subsection{Gekoppelte Schwingkreise}
+19.73Hz Triggerfrequenz, Rechteck
+
+Ein Bild mit ausgeschaltetem Kopplungskondensator
+
+3microFarad
+
+1.449kHz $\omega_S$
+
+bzw 1.471 kHz $\omega_S$ an zweiter Spule
+
+$\omega_M$ = 5.882khZ
+
+bzw $\omega_M$ = 5.882kHz
+
+6microFarad
+
+$\omega_S$= 757.6Hz
+
+$\omega_M$= 5.263kHz
+
+\subsection{Eigenfrequenzen}
+Bei 6 MicroFarad:
+CH1 Oszi hat eine niedrigere Eigenfrequenz
+5002 Hz
+Ch2:
+5021 Hz
+
+bei 3 Microfarad:
+
+Ch1:5000Hz
+Ch2:5027Hz
+
+
 \section{Diskussion}		
 																								
 \end{document}
