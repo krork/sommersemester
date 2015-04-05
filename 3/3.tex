@@ -93,7 +93,7 @@
 \end{verbatim}
 							%Name des Betreuers, das Praktikum betreute.
 			\begin{flushleft}
-			\LARGE{\textbf{Betreuer:\Large{ }}}		
+			\LARGE{\textbf{Betreuer: \Large{HUMMER}}}		
 			\end{flushleft}
 			
 \section{Aufgabenstellung}
@@ -125,18 +125,31 @@ Mit einer Halbwertszeit von $T_{\frac{1}{2}}= 1.28 \cdot 10^{9}a=4.039\cdot 10^{
 bekommen wir die Lebensdauer $$\tau=\frac{T_{1}{2}}{\log{2}}=\lambda^{-1} \Rightarrow \lambda=1.7159 \cdot 10^{-17}$$
 \\
 Daraus gelangen wir schließlich zu dem Ergebnis, dass die körpereigene Aktivität folgenden Wert hat:
-$$A=N\cdot \lambda = 4.2317\cdot 10^{3} \frac{Ereignisse}{Sekunde}$$
+$$A=N\cdot \lambda = 4.2317\cdot 10^{3} \textrm{ Ereignisse / Sekunde}$$
 \subsection{Szintillationszähler}
-\subsubsection{Natrium 22}
-Wir sehen Peaks bei $(513.10 \pm 5.00)keV$ und $(1275.97 \pm 27.80)keV$.
-
-%Bild mit den Peaks einfügen
-
-\subsubsection{Unbekannte Probe}
-Wir sehen Peaks bei $(1181.16 \pm 7.90)keV$ und $(1333.78 \pm 14.29)keV$.\\
+Bei der Messung von Natrium 22 sehen wir Peaks bei $(513.10 \pm 5.00)\si{keV}$ und $(1275.97 \pm 27.80)\si{keV}$. Die Skala wird auf diese Energien kalibriert.\\
+\\
+Nachdem eine unbekannte Probe in den Behälter gegeben wurde messen wir wieder und sehen nun Peaks bei $(1181.16 \pm 7.90)\si{keV}$ und $(1333.78 \pm 14.29)\si{keV}$.\\
 Aufgrund der gemessenen Peaks stellen wir fest, dass es sich bei der unbekannten Probe um \textbf{Cobalt 60} handeln muss.
 
-%Bild mit den Peaks einfügen
+\begin{center}
+\begin{figure}[H]
+\begin{subfigure}{0.52\textwidth}
+\includegraphics[width=0.9\linewidth]{bachgrafbild.jpg}
+\caption{}
+\end{subfigure}
+\begin{subfigure}{0.52\textwidth}
+\includegraphics[width=0.9\linewidth]{bachgrafunbekannt-peaks.eps}
+\caption{}
+\end{subfigure}
+\caption{Die rote Linie in (a) sowie (b) ist das Gammaspektrum von Natrium 22. Die violette Linie in (b) repräsentiert Cobalt 60. Die horizontale Achse zeigt die Energie, die vertikale Achse die Zählrate.}
+\end{figure}
+\label{fig:szint}
+\end{center}
+% -- \ref{fig:name}
+
+In Abbildung \ref{fig:szint} sieht man bei Natrium 22 (a) zwei schöne Photopeaks bei den erwarteten Energien von $(513.10 \pm 5.00)\si{keV}$ ($511\si{keV}$) und $(1275.97 \pm 27.80)\si{keV}$ ($1275\si{keV}$). Auch das Comptongebirge ist gut zu sehen; die Comptonkante befindet sich kurz vor dem zweiten Photopeak. Es gibt auch einen etwas kleineren Peak, der die Röntgenlinie darstellt, sowie einen Rückstreupeak ganz am Anfang des Spektrums.\\
+In (b) bei Cobalt 60 ist ganz Ähnliches zu sehen. Es handelt sich hier wieder um zwei Photopeaks bei den erwarteten Energien von $(1181.16 \pm 7.90)\si{keV}$ ($1173\si{keV}$) und $(1333.78 \pm 14.29)\si{keV}$ ($1333\si{keV}$).
 
 \subsection{Abstandsabhängigkeit}
 %N4:131.44mm : 187 :
@@ -145,23 +158,32 @@ Aufgrund der gemessenen Peaks stellen wir fest, dass es sich bei der unbekannten
 %N7:115.00 : 209 :
 %N8:98.50 :260 :
 %N9:65.7 : 479 Ereignisse:
-\begin{tabular}{|r|l|}
+Die Zählrate $Z$ wurde mit dem Szintillationszähler in Abhängigkeit des Abstands von der Strahlungsquelle gemessen.\\
+Den Abstand $x$ messen wir mit einer Messlehre; der reale Abstand von der Probe ist $d=x-1$.\\
+\\
+Da wir die Unsicherheiten der Zählraten nicht mitgeschrieben haben, vergleichen wir mit den Ergebnissen von anderen Mitstudenten. Wir sehen dort relative Unsicherheiten von bis zu $8\%$ und verwenden diese.
+\\
+\begin{tabular}{|r|r|l|}
 \hline
-Abstand (mm) & Zählrate\\
+$x$ ($\si{mm}, \pm 0.01$) & $d$ ($\si{mm}, \pm 0.01$) & $Z$ ($1/s, \pm 8\% $)\\
 \hline
-127.30 & 178\\
-123.22 & 199\\
-115.00 & 209\\
-98.50 & 260\\
-65.72 & 479\\
+$127.30$ & $126.30$ & $178$\\
+$123.22$ & $122.22$ & $199$\\
+$115.00$ & $114.00$ & $209$\\
+$98.50$ & $97.50$ & $260$\\
+$65.72$ & $64.72$ & $479$\\
 \hline
 \end{tabular}
 
-%Fit von dieser Tabelle einfügen
+\begin{center}
+\begin{figure}[H]
+\includegraphics[scale=0.6]{abstandwurzel.eps}
+\caption{Linearer Fit zur Abstandsabhängigkeit. Es wurde die Wurzel der Peak-Maxima genommen, um den linearen Fit machen zu können.}
+\end{figure}
+\end{center}
 
 \subsection{Nebelkammer}
 \subsection{Geiger-Müller-Zählrohr}
 
-\section{Diskussion}		
-																								
+\section{Diskussion}																								
 \end{document}
