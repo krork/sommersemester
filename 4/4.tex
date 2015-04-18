@@ -105,24 +105,34 @@
 
 \section{Durchführung}
 
+\subsection{Michelson-Interferometer}
+Das Michelson-Interferometer war bereits aufgebaut und gut justiert, darum konnten wir die Messung sogleich durchführen.\\
+Aufgrund der Messmethode müssen wir annehmen, dass N eine Unsicherheit hat: $N=(100 \pm 5)$.
+
 \section{Ergebnisse}
 \subsection*{Auflösungsvermögen eines Gitter}
+% ! Unsicherheiten der Einzelwerte von a fehlen noch
+%
+%
 %Berechnen Sie das Auflösungsvermögen A aus den Angaben.
-$\lambda=576.96nm$\\
-$\lambda=579.07nm$\\
+Die Wellenlängen der Quecksilber-Linien sind $\lambda=576.96nm$ und $\lambda=579.07nm$.\\
+\\
 Das Auflösungsvermögen kann berechnet werden mittels:
-$$A=\frac{\lambda}{\Delta\lambda}=\frac{576.96}{2.11}=273.44$$
-wobei wir $\Delta\lambda$ als die Differenz zwischen den beiden Wellenlängen genommen haben.\\
+$$\boxed{A=\frac{\lambda}{\Delta\lambda}=\frac{576.96}{2.11}=273.44}$$
+wobei wir für $\Delta\lambda$ die Differenz der beiden Wellenlängen genommen haben.\\
 \\
 %Leiten Sie die Formel zur Berechnung der Gitterkonstante aus dem Auflösungsvermögen und den Messgrößen her.
 Das Auflösungsvermögen ist außerdem gegeben durch $A=n\cdot N$. Über die Formel $B=a\cdot N \Rightarrow N=\frac{B}{a}$ können wir also das Auflösungsvermögen und die Gitterkonstante in Beziehung stellen:
 $$A=n\frac{B}{a}$$
 Formen wir um, können wir aus den gemessenen Spaltbreiten zur jeweiligen Ordnung die Gitterkonstante berechnen:
-$$a=n\frac{B}{A}$$
-
+$$\boxed{a=n\frac{B}{A}}$$
+\\
+Wir kommen nun zum experimentellen Teil und messen die Spaltbreite, bei denen die beiden Wellenlängen gerade nicht mehr zu unterscheiden sind. Das führen wir für 3 Ordnungen rechts und links des Zentralbildes durch.
 %Bestimmen Sie die Gitterkonstante und geben Sie diese mit Fehler an.
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{|r|l|l|}
+\hline
 n & B (mm, $\pm 0.01$) & a (mm)\\
 \hline
 R1 & 5.11 & 0.019\\
@@ -131,25 +141,65 @@ R3 & 1.02 & 0.011\\
 L1 & 5.15 & 0.019\\
 L2 & 2.29 & 0.017\\
 L3 & 1.78 & 0.019\\
-%\caption{Spaltbreiten zu den jeweiligen Ordnungen. R: Rechts, L: Links. }
+\hline
+%\caption{Spaltbreiten zu den jeweiligen Ordnungen. R: Rechts, L: Links.}
 \end{tabular}
-
+\caption{Spaltbreiten zu den jeweiligen Ordnungen und daraus berechnete Gitterkonstante. R: Rechts, L: Links.}
 \end{center}
-\vspace{1cm}
-Aus den jeweils berechneten Werten für $a$ berechnen wir einen Mittelwert mit Standardabweichung:
-$$\bar{a}=(0.016 \pm 0.004)mm$$
+\end{table}
+\vspace{0.3mm}
+Aus den jeweils berechneten Werten für die Gitterkonstante $a$ berechnen wir einen Mittelwert mit Standardabweichung:
+$$\boxed{\bar{a}=(0.016 \pm 0.004)mm}$$
 
 \subsection{Spektrometrie}
-\subsection{Michelson-Interferometer}
-\begin{table}
-\caption{Spiegelverschiebung für N= 100 Umdrehungen}
-\begin{tabular}{c}
 
-$(29.5\pm 0.5 \mu m)$\\
-$(32.5\pm 0.5 \mu m)$\\
-$(32.0\pm 0.5 \mu m)$\\
+\subsection{Michelson-Interferometer}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{c}
+$(29.5\pm 0.5)\mu m$\\
+$(32.5\pm 0.5)\mu m$\\
+$(32.0\pm 0.5)\mu m$\\
 \end{tabular}
+\caption{Spiegelverschiebung $l$ für $N=100 \pm 5$ Umdrehungen}
+\end{center}
 \end{table}
-\section{Diskussion}		
+\vspace{0.3mm}
+
+Mit der Formel $2 l=\lambda N$ können wir die Wellenlänge des Lasers berechnen:
+%Wir verwenden hier $l$ statt $\Delta l$ für die Spiegelverschiebung, da sie ansonsten mit der Unsicherheit der Verschiebung (die wir $\Delta l$ nennen) verwechselt werden könnte.\\
+%Die Wellenlänge wird also berechnet mittels
+$$\lambda=\frac{2l}{N}$$
+\\
+Wir führen hier eine komplette Fehlerrechnung durch:
+$\Delta l$ und $N$ haben jeweils eine Unsicherheit, die in der Gaußschen Fehlerfortpflanzung verwendet werden müssen.\\
+$$\Delta \lambda=\sqrt{\left(\frac{\Delta l}{l}\right)^2+\left(\frac{\Delta N}{N}\right)^2}=\sqrt{\left(\frac{0.5}{l}\right)^2+\left(\frac{5}{100}\right)^2}=0.053 \mu m$$
+Diese Unsicherheit gilt glücklicherweise für alle drei Werte von $l$.\\
+Wir haben nun also: 
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+$l$ & $\lambda$\\
+\hline
+$(29.5\pm 0.5)\mu m$ & $(590 \pm 53)nm$\\
+$(32.5\pm 0.5)\mu m$ & $(650 \pm 53)nm$\\
+$(32.0\pm 0.5)\mu m$ & $(640 \pm 53)nm$\\
+\hline
+\end{tabular}
+\caption{Spiegelverschiebung und daraus berechnete Wellenlänge}
+\end{center}
+\end{table}
+\vspace{0.3mm}
+
+Der Mittelwert aus diesen drei Werten ist $626nm$ mit der Standardabweichung $32nm$. Da die Unsicherheit der Messwerte größer ist verwenden wir deren Unsicherheit und erhalten das Ergebnis:
+
+$$\boxed{\lambda=(626 \pm 53)nm}$$
+
+\section{Diskussion}	
+
+\subsection{Michelson-Interferometer}
+Bei der ersten Messung der Spiegelverschiebung mussten wir erst den Rhythmus finden, in dem das Zählen der Maxima leicht fällt. Daher ist es durchaus möglich, dass das Ergebnis für die Wellenlänge besser stimmt, wenn nur zweiter und dritter Messwert verwendet werden. Dadurch würden wir $\lambda=(645 \pm 53)nm$ erhalten.\\
+Da der in den Ergebnissen angegebene Wert aber innerhalb der Unsicherheitsgrenzen im richtigen Bereich liegt, haben wir ihn beibehalten.
 																								
 \end{document}
