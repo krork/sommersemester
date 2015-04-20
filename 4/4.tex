@@ -100,6 +100,7 @@
 			\end{flushleft}
 			
 \section{Aufgabenstellung}
+Verschiedenste Effekte der Interaktion von Licht mit Materie werden gemessen und mit ihnen auf Eigenschaften der betrachteten Vorgänge und involvierten Körper geschlossen.
 
 \section{Theorie}
 \subsection{Auflösungsvermögen eines Gitters}
@@ -125,7 +126,8 @@ $$A=\frac{\lambda}{\Delta\lambda}=n\cdot N$$
 Alle weitere Berechnungen sind der Sparte \textit{Ergebnisse} zu entnehmen, da dies Teil der Aufgabe war und somit im \textit{Theorie}-Abschnitt schon vorgegriffen wäre.
 
 
-\subsection{}
+\subsection{Spektroskopie und -metrie}
+Durch die komplizierten Wechselwirkungen zwischen Materie und Licht, das als elektromagnetische Welle stark mit Elektronen interagiert, kann Licht viel Energie an Materie übertragen. Vor allem ist diese Übertragung von Energie meistens am stärksten im Bereich der Eigenschwingungen der angeregten Materie. Misst man die Intensität des einfallenden Lichtes und vergleicht sie mit der des transmittierten Lichtes, kann man daraus auf die $Transmission T$ schließen - den Quotienten aus der Intensität des transmittierten und des einfallenden Lichtes. Dadurch, dass der meiste Energieverlust in den Frequenzen der Eigenschwingungen der Materie geschieht, und diesen Frequenzen Wellenlängen entsprechen, kann man aus den Intensitäten verschiedener Wellenlängen in der transmittierten Strahlung Rückschlüsse auf die Beschaffenheit der Materie ziehen - denn Stoffe aus unterschiedlichen Atomen, mit unterschiedlichen Elektronenbesetzungen und unterschiedlichen Eigenfrequenzen, absorbieren andere Wellenlängen. Diese Vorgehensweise nennt man Spektroskopie. 
 
 \subsection{Michelson-Interferometer}
 
@@ -139,11 +141,16 @@ lässt sich die Wellenlänge des Lichts bestimmen - wobei N die Anzahl der entst
 \section{Aufbau}
 \subsection{Auflösungsvermögen eines Gitters}
 Wir verwenden eine Quecksilberdampflampe, deren Licht wir auf ein Gitter fallen lassen und durch ein Fernrohr beobachten. Das verwendete Licht hat dabei zwei gelbe Anteile, deren Wellenlängen nah beinander liegen. Wenn wir einen weiten Spalt vor das Gitter stellen und ihn langsam verengen, können wir dabei die Zahl der Gitterstriche verringern, bis das Auflösungsvermögen des Gitters so gering ist dass die beiden gelben Striche zu einem verwischt werden. Darauf warten wir und messen dann die Breite des Spaltes mit einem Kathetometer.
+\subsection{Spektrometrie}
+Wir verwenden ein automatisches Spektrometer mit USB-Anschluss um die Spektra direkt computergestützt auswerten lassen zu können. Dabei nutzen wir eine Halogenlampe um eine Probesubstanz zu analysieren, einen gespleißten Glasfaserkanal um auch Reflexion elegant messen zu können, sowie eine Glühlampe, an der wir einen Interferenz- und einen Farbglasfilter untersuchen.
 \subsection{Michelson-Interferometer}
 Wir verwenden einen Laser, einen Beamsplitter, zwei Spiegel, einen Schirm und viele rechte Winkel um ein Interferenzmuster nach vorher beschriebener Methode zu erzeugen. Dann wird einer der Spiegel mittels einer Mikrometerschraube mit einer Schraubenkonstante von 0.5$\mu$m verschoben und die dabei auftauchenden Intensitätsminima gezählt. 
 \section{Durchführung}
 \subsection{Auflösungsvermögen eines Gitters}
 Wir messen die Breite des Spaltes beim Verwischen der beiden gelben Linien für drei Beugungsordnungen links und rechts der Mitte. Die Unsicherheit der Breite des Spaltes kann mit $\pm$0.01 mm angegeben werden, allerdings ist der genaue Moment des Verwischens der Linien mit freiem Auge gemessen und die Messung damit einer weiteren Unsicherheit unterworfen, die wir hier allerdings nicht betrachten.
+\subsection{Spektrometrie}
+Wir verwenden die Software SpectraSuite und missachten Messunsicherheiten. Wir messen zuerst Dark Spectra mit einer schwarzen Probe, die eher wenig sichtbares Licht abgibt, um an ihr doch thermisches, also infrarotes (und möglicherweise ultraviolettes?) Hintergrundrauschen zu messen und das später abziehen zu können. \\
+Dann messen wir ein Referenzspektrum an einer Leerprobe, also an einem leeren Behälter, der dem identisch ist, in dem wir später unsere Probe messen werden, um die Absorption des Behälters einzubeziehen und eine nackte Messung der Probe zu ermöglichen.
 \subsection{Michelson-Interferometer}
 Es werden drei mal 100 Minima gezählt.\\
 Das Interferometer war bereits aufgebaut und gut justiert, darum konnten wir die Messung sogleich durchführen.\\
@@ -194,6 +201,7 @@ $$\boxed{\bar{a}=(0.016 \pm 0.004)mm}$$
 \subsection{Spektrometrie}
 
 \begin{figure}[H]
+\caption{Spektra an der Halogenlampe}
 \centering
 \begin{subfigure}[h]{0.4\textwidth}
 \includegraphics[width=\textwidth ,angle=-90]{eps/referenztrans1.eps}
@@ -210,7 +218,7 @@ $$\boxed{\bar{a}=(0.016 \pm 0.004)mm}$$
 \centering
 \begin{subfigure}[h]{0.4\textwidth}
 \includegraphics[width=\textwidth ,angle=-90]{eps/probeAabs.eps}
-\caption{Absorptionsspektrum \\ von Probe A}
+\caption{Absorptionsspektrum \\ \label{fig:absA} von Probe A}
 \end{subfigure}
 \begin{subfigure}[h]{0.4\textwidth}
 \includegraphics[width=\textwidth ,angle=-90]{eps/probeAabsdetail.eps}
@@ -234,7 +242,7 @@ Wellenlänge [nm] & Absorption  \\
 
 
 \begin{figure}[H]
-\caption{Messungen \label{fig:gluehlampen} mit der Glühlampe}
+\caption{Spektra \label{fig:gluehlampen} an der Glühlampe}
 
 \centering
 \begin{subfigure}[h]{0.4\textwidth}
@@ -263,17 +271,14 @@ Wellenlänge [nm] & Absorption  \\
 \begin{figure}
 \centering
 \includegraphics[width=0.4\textwidth, angle=-90]{eps/glasfilterk3.eps}
-\caption{Transmissionsspektrum des gelbgrünen Glasfilters K3}
+\caption{Transmissionsspektrum \label{fig:glasfilter} des gelbgrünen Glasfilters K3}
 \end{figure}
 
 Die Bandbreite der Transmission, das FWHM, des Interferenzfilters wurde mit dem Fit einer Gaußschen Glockenkurve in qtiplot berechnet, und zwar zu:
-\begin{center}
-\fbox{(8.3 $\pm$ 0.4)nm}
-\end{center}
-um eine Wellenlänge von \fbox{(480 $\pm$ 1) nm}.\\
+\begin{flushleft}
+\fbox{FWHM bei(8.3 $\pm$ 0.4)nm um eine zentrale Wellenlänge (CWL) von(480 $\pm$ 1) nm} \\
+\end{flushleft}
 
-Bei den Reflexionsspektren des Interferenzfilters \subref{fig:silverrefl} fällt auf, dass bei der silbrigen Seite ein großer Teil des Lichts reflektiert wird, nur eine kleine Bandbreite im Bereich von 480nm fehlt - was in den grünen Bereich des sichtbaren Lichts fällt. Laut wikipedia ist Licht von 480 bis 560 nm grün. Also sollte die silbrige Seite leicht rot oder orange getüncht erschienen sein - in der Komplementärfarbe der entsprechenden grünen Bandbreite - woran wir uns aber nicht sicher erinnern können. \\
-Beim Reflexionsspektrum der grünen Seite  \subref{fig:greenrefl} sieht man schön dass die Wellenlängen unter 460 nm kaum reflektiert werden - es gibt wieder ein Minimum bei 480nm - und darüber aber wieder stärker. Die fehlenden Wellenlängen lassen den Filter jedenfalls grün erscheinen.
 \subsection{Michelson-Interferometer}
 \begin{table}[H]
 \begin{center}
@@ -321,10 +326,11 @@ $$\boxed{\lambda=(626 \pm 53)nm}$$
 
 \subsection{Spektrometrie}
 
-Aufgrund des Absorptionsspektrums handelt es sich bei Probe A um Praseodym. \\
+Aufgrund des Absorptionsspektrums, zu sehen in Bild (\ref{fig:absA}) handelt es sich bei Probe A um Praseodym. \\
 
-Bei den Reflexionsspektren des Interferenzfilters in Bild (\ref{fig:silverrefl}) fällt auf, dass bei der silbrigen Seite ein großer Teil des Lichts reflektiert wird, nur eine kleine Bandbreite im Bereich von 480nm fehlt - was in den grünen Bereich des sichtbaren Lichts fällt. Laut wikipedia ist Licht von 480 bis 560 nm grün. Also sollte die silbrige Seite leicht rot oder orange getüncht erschienen sein - in der Komplementärfarbe der entsprechenden grünen Bandbreite - woran wir uns aber nicht sicher erinnern können. \\
-Beim Reflexionsspektrum der grünen Seite in Bild (\ref{fig:greenrefl}) sieht man schön dass die Wellenlängen unter 460 nm kaum reflektiert werden - es gibt wieder ein Minimum bei 480nm - und darüber aber wieder stärker. Die fehlenden Wellenlängen lassen den Filter jedenfalls grün erscheinen.
+Bei den Reflexionsspektra des Interferenzfilters in Bild (\ref{fig:silverrefl}) fällt auf, dass bei der silbrigen Seite ein großer Teil des Lichts reflektiert wird, nur eine kleine Bandbreite im Bereich von 480nm fehlt - was in den grünen Bereich des sichtbaren Lichts fällt. Laut wikipedia ist Licht von 480 bis 560 nm grün. Also sollte die silbrige Seite leicht rot oder orange getüncht erschienen sein - in der Komplementärfarbe der entsprechenden grünen Bandbreite - woran wir uns aber nicht sicher erinnern können. \\
+Beim Reflexionsspektrum der grünen Seite in Bild (\ref{fig:greenrefl}) sieht man schön dass die Wellenlängen unter 460 nm kaum reflektiert werden - es gibt wieder ein Minimum bei 480nm - und darüber aber wieder stärker. Die fehlenden Wellenlängen lassen den Filter jedenfalls grün erscheinen.\\
+Am Spektrum des gelbgrünen Glasfilter K3 erkennt man in Bild (\ref{fig:glasfilter}) schön, dass nur Wellenlängen im Bereich von 460nm bis 520nm, dem gelbgrün erscheinenden Bereich des sichtbaren Lichtes, durchtreten.
 \subsection{Michelson-Interferometer}
 Bei der ersten Messung der Spiegelverschiebung mussten wir erst den Rhythmus finden, in dem das Zählen der Maxima leicht fällt. Daher ist es durchaus möglich, dass das Ergebnis für die Wellenlänge besser stimmt, wenn nur zweiter und dritter Messwert verwendet werden. Dadurch würden wir $\lambda=(645 \pm 53)nm$ erhalten.\\
 Da der in den Ergebnissen angegebene Wert aber innerhalb der Unsicherheitsgrenzen im richtigen Bereich liegt, haben wir ihn beibehalten.
