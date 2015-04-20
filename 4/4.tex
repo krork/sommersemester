@@ -5,6 +5,7 @@
 \usepackage{float}
 \usepackage{epsfig,graphicx}
 \usepackage{xcolor,import}
+\usepackage{caption}
 \usepackage{subcaption}
 \usepackage[font=small,labelfont=bf]{caption}
 \usepackage{siunitx}
@@ -153,6 +154,77 @@ $$\boxed{\bar{a}=(0.016 \pm 0.004)mm}$$
 
 \subsection{Spektrometrie}
 
+\begin{figure}[H]
+\centering
+\begin{subfigure}[h]{0.4\textwidth}
+\includegraphics[width=\textwidth ,angle=-90]{eps/referenztrans1.eps}
+\caption{Referenzspektrum mit leerem Probenbehälter}
+\end{subfigure}
+\begin{subfigure}[h]{0.4\textwidth}
+\includegraphics[width=\textwidth ,angle=-90]{eps/probeAtrans.eps}
+\caption{Transmissionsspektrum von Probe A}
+\end{subfigure}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[h]{0.4\textwidth}
+\includegraphics[width=\textwidth ,angle=-90]{eps/probeAabs.eps}
+\caption{Absorptionsspektrum \\ von Probe A}
+\end{subfigure}
+\begin{subfigure}[h]{0.4\textwidth}
+\includegraphics[width=\textwidth ,angle=-90]{eps/probeAabsdetail.eps}
+\caption{Detail des selben Spektrums}
+\end{subfigure}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Absorption der Probe A}
+\label{AbsProbeA}
+\begin{tabular}{|c|c|} \hline
+Wellenlänge [nm] & Absorption  \\ 
+\hline 444 & 1.6 \\
+469 & 0.8 \\
+482 & 0.7 \\
+590 & 0.3 \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[h]{0.4\textwidth}
+\includegraphics[width=\textwidth ,angle=-90]{eps/leerproberef.eps}
+\caption{Referenzspektrum der Glühlampe}
+\end{subfigure}
+\begin{subfigure}[h]{0.4\textwidth}
+\includegraphics[width=\textwidth ,angle=-90]{eps/intertranswhole.eps}
+\caption{Transmissionsspektrum des Interferenzfilters}
+\end{subfigure}
+\begin{subfigure}[h]{0.4\textwidth}
+\includegraphics[width=\textwidth ,angle=-90]{eps/interreflsilber.eps}
+\caption{Reflexionsspektrum der silbernen Seite des Interferenzfilters}
+\end{subfigure}
+\begin{subfigure}[h]{0.4\textwidth}
+\includegraphics[width=\textwidth ,angle=-90]{eps/interreflgruen.eps}
+\caption{Reflexionsspektrum der grünen Seite des Interferenzfilters}
+\end{subfigure}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth, angle=-90]{eps/glasfilterk3.eps}
+\caption{Transmissionsspektrum des gelbgrünen Glasfilters K3}
+\end{figure}
+
+Die Bandbreite der Transmission, das FWHM, des Interferenzfilters wurde mit dem Fit einer Gaußschen Glockenkurve in qtiplot berechnet, und zwar zu:
+\begin{center}
+\fbox{(8.3 $\pm$ 0.4)nm}
+\end{center}
+um eine Wellenlänge von \fbox{(480 $\pm$ 1) nm}.
 \subsection{Michelson-Interferometer}
 \begin{table}[H]
 \begin{center}
@@ -197,6 +269,10 @@ Der Mittelwert aus diesen drei Werten ist $626nm$ mit der Standardabweichung $32
 $$\boxed{\lambda=(626 \pm 53)nm}$$
 
 \section{Diskussion}	
+
+\subsection{Spektrometrie}
+
+Aufgrund des Absorptionsspektrums handelt es sich bei Probe A um Praseodym. 
 
 \subsection{Michelson-Interferometer}
 Bei der ersten Messung der Spiegelverschiebung mussten wir erst den Rhythmus finden, in dem das Zählen der Maxima leicht fällt. Daher ist es durchaus möglich, dass das Ergebnis für die Wellenlänge besser stimmt, wenn nur zweiter und dritter Messwert verwendet werden. Dadurch würden wir $\lambda=(645 \pm 53)nm$ erhalten.\\
