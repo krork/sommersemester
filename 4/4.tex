@@ -12,6 +12,8 @@
 \usepackage[german]{babel}
 \usepackage{textcomp}
 \usepackage{mathtools}
+\usepackage{subcaption}
+\usepackage{cleveref}
 
 \begin{document}
 
@@ -232,6 +234,8 @@ Wellenlänge [nm] & Absorption  \\
 
 
 \begin{figure}[H]
+\caption{Messungen \label{fig:gluehlampen} mit der Glühlampe}
+
 \centering
 \begin{subfigure}[h]{0.4\textwidth}
 \includegraphics[width=\textwidth ,angle=-90]{eps/leerproberef.eps}
@@ -242,12 +246,17 @@ Wellenlänge [nm] & Absorption  \\
 \caption{Transmissionsspektrum des Interferenzfilters}
 \end{subfigure}
 \begin{subfigure}[h]{0.4\textwidth}
+
 \includegraphics[width=\textwidth ,angle=-90]{eps/interreflsilber.eps}
-\caption{Reflexionsspektrum der silbernen Seite des Interferenzfilters}
+\caption{Reflexionsspektrum der \label{fig:silverrefl} silbernen Seite des Interferenzfilters}
 \end{subfigure}
 \begin{subfigure}[h]{0.4\textwidth}
 \includegraphics[width=\textwidth ,angle=-90]{eps/interreflgruen.eps}
-\caption{Reflexionsspektrum der grünen Seite des Interferenzfilters}
+\caption{Reflexionsspektrum \label{fig:greenrefl} der grünen Seite des Interferenzfilters}
+\end{subfigure}
+\begin{subfigure}[h]{0.4\textwidth}
+\includegraphics[width=\textwidth ,angle=-90]{eps/interrefldetail.eps}
+\caption{Detail des Reflexionsspektrums der grünen Seite des Interferenzfilters}
 \end{subfigure}
 \end{figure}
 
@@ -261,7 +270,10 @@ Die Bandbreite der Transmission, das FWHM, des Interferenzfilters wurde mit dem 
 \begin{center}
 \fbox{(8.3 $\pm$ 0.4)nm}
 \end{center}
-um eine Wellenlänge von \fbox{(480 $\pm$ 1) nm}.
+um eine Wellenlänge von \fbox{(480 $\pm$ 1) nm}.\\
+
+Bei den Reflexionsspektren des Interferenzfilters \subref{fig:silverrefl} fällt auf, dass bei der silbrigen Seite ein großer Teil des Lichts reflektiert wird, nur eine kleine Bandbreite im Bereich von 480nm fehlt - was in den grünen Bereich des sichtbaren Lichts fällt. Laut wikipedia ist Licht von 480 bis 560 nm grün. Also sollte die silbrige Seite leicht rot oder orange getüncht erschienen sein - in der Komplementärfarbe der entsprechenden grünen Bandbreite - woran wir uns aber nicht sicher erinnern können. \\
+Beim Reflexionsspektrum der grünen Seite  \subref{fig:greenrefl} sieht man schön dass die Wellenlängen unter 460 nm kaum reflektiert werden - es gibt wieder ein Minimum bei 480nm - und darüber aber wieder stärker. Die fehlenden Wellenlängen lassen den Filter jedenfalls grün erscheinen.
 \subsection{Michelson-Interferometer}
 \begin{table}[H]
 \begin{center}
@@ -309,8 +321,10 @@ $$\boxed{\lambda=(626 \pm 53)nm}$$
 
 \subsection{Spektrometrie}
 
-Aufgrund des Absorptionsspektrums handelt es sich bei Probe A um Praseodym. 
+Aufgrund des Absorptionsspektrums handelt es sich bei Probe A um Praseodym. \\
 
+Bei den Reflexionsspektren des Interferenzfilters in Bild (\ref{fig:silverrefl}) fällt auf, dass bei der silbrigen Seite ein großer Teil des Lichts reflektiert wird, nur eine kleine Bandbreite im Bereich von 480nm fehlt - was in den grünen Bereich des sichtbaren Lichts fällt. Laut wikipedia ist Licht von 480 bis 560 nm grün. Also sollte die silbrige Seite leicht rot oder orange getüncht erschienen sein - in der Komplementärfarbe der entsprechenden grünen Bandbreite - woran wir uns aber nicht sicher erinnern können. \\
+Beim Reflexionsspektrum der grünen Seite in Bild (\ref{fig:greenrefl}) sieht man schön dass die Wellenlängen unter 460 nm kaum reflektiert werden - es gibt wieder ein Minimum bei 480nm - und darüber aber wieder stärker. Die fehlenden Wellenlängen lassen den Filter jedenfalls grün erscheinen.
 \subsection{Michelson-Interferometer}
 Bei der ersten Messung der Spiegelverschiebung mussten wir erst den Rhythmus finden, in dem das Zählen der Maxima leicht fällt. Daher ist es durchaus möglich, dass das Ergebnis für die Wellenlänge besser stimmt, wenn nur zweiter und dritter Messwert verwendet werden. Dadurch würden wir $\lambda=(645 \pm 53)nm$ erhalten.\\
 Da der in den Ergebnissen angegebene Wert aber innerhalb der Unsicherheitsgrenzen im richtigen Bereich liegt, haben wir ihn beibehalten.
