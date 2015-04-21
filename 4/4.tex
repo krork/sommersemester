@@ -127,8 +127,12 @@ Alle weitere Berechnungen sind der Sparte \textit{Ergebnisse} zu entnehmen, da d
 
 
 \subsection{Spektroskopie und -metrie}
-Durch die komplizierten Wechselwirkungen zwischen Materie und Licht, das als elektromagnetische Welle stark mit Elektronen interagiert, kann Licht viel Energie an Materie übertragen. Vor allem ist diese Übertragung von Energie meistens am stärksten im Bereich der Eigenschwingungen der angeregten Materie. Misst man die Intensität des einfallenden Lichtes und vergleicht sie mit der des transmittierten Lichtes, kann man daraus auf die $Transmission T$ schließen - den Quotienten aus der Intensität des transmittierten und des einfallenden Lichtes. Dadurch, dass der meiste Energieverlust in den Frequenzen der Eigenschwingungen der Materie geschieht, und diesen Frequenzen Wellenlängen entsprechen, kann man aus den Intensitäten verschiedener Wellenlängen in der transmittierten Strahlung Rückschlüsse auf die Beschaffenheit der Materie ziehen - denn Stoffe aus unterschiedlichen Atomen, mit unterschiedlichen Elektronenbesetzungen und unterschiedlichen Eigenfrequenzen, absorbieren andere Wellenlängen. Diese Vorgehensweise nennt man Spektroskopie. 
-
+Durch die komplizierten Wechselwirkungen zwischen Materie und Licht, das als elektromagnetische Welle stark mit Elektronen interagiert, kann Licht viel Energie an Materie übertragen. Vor allem ist diese Übertragung von Energie meistens am stärksten im Bereich der Eigenschwingungen der angeregten Materie. Misst man die Intensität des einfallenden Lichtes und vergleicht sie mit der des transmittierten Lichtes, kann man daraus auf die $Transmission$ $T$ schließen - den Quotienten aus der Intensität des transmittierten ($I_{trans}$) und des einfallenden ($I_{0}$) Lichtes. SpectraSuite gibt direkt die Transmission an, wie auch die $Absorbanz$ $A$ - die der negative Logarithmus des Quotienten von der Intensität nach ($I(d)$) und der Intensität vor($I(0)$) dem Durchgang durch das Medium der Dicke $d$ ist.\\
+\begin{align*}
+T&=\frac{I_{trans}}{I_{0}}\\
+A=&-ln\frac{I(d)}{I(0)}
+\end{align*} Dadurch, dass der meiste Energieverlust in den Frequenzen der Eigenschwingungen der Materie geschieht, und diesen Frequenzen Wellenlängen entsprechen, kann man aus den Intensitäten verschiedener Wellenlängen in der transmittierten Strahlung Rückschlüsse auf die Beschaffenheit der Materie ziehen - denn Stoffe aus unterschiedlichen Atomen, mit unterschiedlichen Elektronenbesetzungen und unterschiedlichen Eigenfrequenzen, absorbieren andere Wellenlängen. Das Beobachtend dieser Spektra nennt man Spektroskopie. Das Aufzeichnen der Spektra nennt man Spektrometrie.
+\
 \subsection{Michelson-Interferometer}
 
 Das Michelson-Interferometer nutzt die Interferenz zwischen kohärenten Wellenzügen um die Unterschiede zweier Wege zu messen. Das bedeutet, dass kohärentes Laserlicht an einem Beamsplitter auf zwei Wege geschickt wird, um an deren Ende reflektiert, wieder vereint und dabei zur Interferenz gebracht zu werden. Das Interferenzmuster lässt sich auf einem Schirm beobachten - es entsteht durch einen Phasenunterschied der beiden Lichtwellen. Dieser Unterschied kann auf verschiedene Arten erzeugt werden, zum Beispiel durch unterschiedlich lange Wege, unterschiedliche optische Beschaffenheit der Medien, durch die die Lichtwellen ziehen, oder auch durch Bewegung der Apparatur, ein Effekt, der beispielsweise beim Laserkreisel in Flugzeugen Anwendung findet - einer technischen Anwendung, deren immense Bedeutsamkeit für unser aller Leben kaum unterschätzt werden und daher immer wieder nur hervorgehoben werden kann.\\
@@ -211,12 +215,6 @@ $$\boxed{\bar{a}=(0.016 \pm 0.004)mm}$$
 \includegraphics[width=\textwidth ,angle=-90]{eps/probeAtrans.eps}
 \caption{Transmissionsspektrum von Probe A}
 \end{subfigure}
-
-\end{figure}
-
-
-\begin{figure}[H]
-\centering
 \begin{subfigure}[h]{0.4\textwidth}
 \includegraphics[width=\textwidth ,angle=-90]{eps/probeAabs.eps}
 \caption{Absorptionsspektrum \\ \label{fig:absA} von Probe A}
@@ -252,11 +250,11 @@ Wellenlänge [nm] & Absorption  \\
 \end{subfigure}
 \begin{subfigure}[h]{0.4\textwidth}
 \includegraphics[width=\textwidth ,angle=-90]{eps/intertranswhole.eps}
-\caption{Transmissionsspektrum des Interferenzfilters}
+\caption{Transmissionsspektrum \label{fig:intertrans} des Interferenzfilters}
 \end{subfigure}
 \begin{subfigure}[h]{0.4\textwidth}
 \includegraphics[width=\textwidth ,angle=-90]{eps/intertransdetail.eps}
-\caption{Detail aus dem Transmissionsspektrum \label{fig:interfdetail} des Interferenzfilters}
+\caption{Detail aus Bild (\ref{fig:intertrans})  \label{fig:interfdetail} }
 \end{subfigure}
 \begin{subfigure}[h]{0.4\textwidth}
 
@@ -269,7 +267,7 @@ Wellenlänge [nm] & Absorption  \\
 \end{subfigure}
 \begin{subfigure}[h]{0.4\textwidth}
 \includegraphics[width=\textwidth ,angle=-90]{eps/interrefldetail.eps}
-\caption{Detail des Reflexionsspektrums der grünen Seite des Interferenzfilters}
+\caption{Detail aus Bild (\ref{fig:greenrefl})}
 \end{subfigure}
 \end{figure}
 
@@ -335,7 +333,7 @@ Die Werte liegen allerdings trotzdem einigermaßen gut aneinander. Einzig auffal
 
 \subsection{Spektrometrie}
 
-Aufgrund des Absorptionsspektrums, zu sehen in Bild (\ref{fig:absA}) handelt es sich bei Probe A um Praseodym. \\
+Aufgrund des Absorptionsspektrums, zu sehen in Bild (\ref{fig:absA}) und in der Tabelle (\ref{AbsProbeA}) handelt es sich bei Probe A um Praseodym. \\
 
 Bei den Reflexionsspektra des Interferenzfilters in Bild (\ref{fig:silverrefl}) fällt auf, dass bei der silbrigen Seite ein großer Teil des Lichts reflektiert wird, nur eine kleine Bandbreite im Bereich von 480nm fehlt - was in den grünen Bereich des sichtbaren Lichts fällt. Laut wikipedia ist Licht von 480 bis 560 nm grün. Also sollte die silbrige Seite leicht rot oder orange getüncht erschienen sein - in der Komplementärfarbe der entsprechenden grünen Bandbreite - woran wir uns aber nicht sicher erinnern können. \\
 Beim Reflexionsspektrum der grünen Seite in Bild (\ref{fig:greenrefl}) sieht man schön dass die Wellenlängen unter 460 nm kaum reflektiert werden - es gibt wieder ein Minimum bei 480nm - und darüber aber wieder stärker. Die fehlenden Wellenlängen lassen den Filter jedenfalls grün erscheinen.\\
