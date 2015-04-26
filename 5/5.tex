@@ -172,34 +172,37 @@ $C_=\frac{\lambda}{S}$\\
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|r|}
 \hline
-$n$ & $p$ ($\si{bar}$, $\pm 0.5 bar$) & $p$ ($N/mm^2$, $\pm 0.05N/mm^2$) & $F$ ($N$) & $\sigma$ ($N/mm^2$) & $S$ ($N/mm$)\\
+$n$ & $p$ ($\pm 0.5$, bar) & $p$ ($\pm 0.05$, $\si{N/mm^2}$) & $F$ ($N$) & $\sigma$ ($\si{N/mm^2}$) & $S$ ($\si{N/mm}$)\\
 \hline
-1 & 2.0 & 0.20 & 883.4 & 8.32852 & $85.7838 \pm 24$\\
-2 & 5.5 & 0.55 & 2429.83 & 22.9034 & $117.953 \pm 12$\\
-3 & 9.0 & 0.90 & 3976.1 & 37.3784 & $128.676 \pm 8.1$\\
-4 & 12.0 & 1.20 & 5301.4 & 49.9711 & $128.676 \pm 6.0$\\
-5 & 15.5 & 1.55 & 6847.69 & 64.546 & $132.965 \pm 4.8$\\
+1 & 2.0 & 0.20 & 883.12 & 8.3243 & $86 \pm 22$\\
+2 & 5.5 & 0.55 & 2428.59 & 22.8918 & $118 \pm 11$\\
+3 & 9.0 & 0.90 & 3974.06 & 37.4594 & $128.6 \pm 7.2$\\
+4 & 12.0 & 1.20 & 5298.75 & 49.9458 & $128.6 \pm 5.4$\\
+5 & 15.5 & 1.55 & 6844.22 & 64.5133 & $132.9 \pm 4.3$\\
 \hline
 \end{tabular}
 \end{center}
 \end{table}
 \vspace{0.5mm}
-Für alle 5 Ordnungen:
 
-$13°9'$
-$$S_5=(134 \pm 21 )\cdot 10^3 N/mm \Rightarrow C_5=(4.40 \pm 0.71) \cdot 10^{-9}mm^2/N$$
-Für Ordnungen 2 bis 5:
-$$S_4=(143.1 \pm 7.1 )\cdot 10^3 N/mm \Rightarrow C_4=(4.12 \pm 0.21) \cdot 10^{-9}mm^2/N$$
+Da die Unsicherheiten der Querschnittsfläche und Dicke der Probe im Vergleich zur Unsicherheit der Druckmessung gering ist, vernachlässigen wir diese. Wir geben die Unsicherheiten zu den Zwischenschritten ($F$, $\sigma$) nicht an, sondern schließen mittels der relativen Unsicherheit der Druckmessung direkt auf die Unsicherheit von $S$.\\
+Diese Unsicherheit ist dann gegeben durch $\frac{\Delta p}{p} \cdot S$, zum Beispiel Ordnung 2: $\frac{0.5}{5.5} \cdot 117.89=10.72 \Rightarrow S=(118 \pm 11) \si{N/mm}$.\\
+\\
+Der Mittelwert für $S$ aus allen 5 Ordnungen und daraus $C$ ist
+$$S=(119 \pm 19)\si{N/mm} \Rightarrow C=(4.97 \pm 0.79) \cdot 10^{-6}\si{mm^2/N}$$
+\\
+Der Mittelwert für $S$ aus den Ordnungen 2 bis 5 und daraus $C$ ist
+$$\boxed{S=(127.0 \pm 6.4)\si{N/mm} \Rightarrow C=(4.64 \pm 0.24) \cdot 10^{-6}\si{mm^2/N}}$$
 
 \subsection{Optische Aktivität}
 2 der Quarzproben drehten im mathematisch positiven Sinn, eine im mathematisch negativen Sinn.\\
 
-
+$13^\circ 9'$
 \section{Diskussion}
 \subsection{Brewster Winkel}
 \subsection{Spannungsoptik}
 
-Der Mittelwert aller fünf Messwerte ist $S=134 \pm 21 )\cdot 10^3 N/mm$. Vernachlässigen wir allerdings den Wert bei der 1. Ordnung erhalten wir $S=143.1 \pm 7.1 )\cdot 10^3 N/mm$; dieser Wert liegt sehr gut innerhalb der 1$\sigma$ Vertrauensbereiche der anderen Messwerte! Darum gehen wir davon aus dass die Messung bei der 1. Ordnung nicht genau war, eine Feststellung, die weiter davon bestärkt wird dass in einer zweiten Messung ein Wert von $2.5 \si{bar}$ gemessen wurde.\\
+Der Mittelwert aller fünf Messwerte ist $S=(119 \pm 19)\si{N/mm}$. Vernachlässigen wir allerdings den Wert bei der 1. Ordnung erhalten wir $S=(127.0 \pm 6.4)\si{N/mm}$; dieser Wert liegt sehr gut innerhalb der 1$\sigma$ Vertrauensbereiche der anderen Messwerte! Darum gehen wir davon aus dass die Messung bei der 1. Ordnung nicht genau war, eine Feststellung, die weiter davon bestärkt wird dass in einer zweiten Messung ein Wert von $2.5 \si{bar}$ gemessen wurde.\\
 Bedenken wir zusätzlich, dass wir eine Unsicherheit von $0.5 \si{bar}$ für die Messung des Drucks annehmen, bedeutet das also, dass der Wert der 1. Ordnung eigentlich ($2.0 \pm 1.0)\si{bar}$ beträgt. Das ist bereits eine relative Unsicherheit von 50\%, wodurch auch dieser Messwert innerhalb der Unsicherheitsgrenzen liegt. 
 
 \subsection{Optische Aktivität}
