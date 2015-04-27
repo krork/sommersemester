@@ -100,17 +100,28 @@
 			\end{flushleft}
 			
 \section{Aufgabenstellung}
+Wir untersuchen mittels polarisiertem Licht verschiedene Eigenschaften von Materialien, wie die Schwingungsrichtung der Dipole in einer Glasplatte, die den Brewsterwinkel vorgibt, die Spannungszustände in einer Plexiglasprobe unter Druck und die optische Aktivität von Quarz und einer Zuckerlösung.
 
 \section{Theorie}
 \subsection{Brewster Winkel}
+Wenn Licht auf eine Glasplatte trifft und in ihr gebrochen wird, oszillieren die elektrischen Dipole in der Platte senkrecht auf die Ausbreitungsrichtung des gebrochenen Strahls. Wenn linear polarisiertes Licht nun so auf die Platte fällt, dass der Winkel eines an der Oberfläche reflektierten Strahles senkrecht auf den des gebrochenen Strahles stehen würde, kann kein Licht reflektiert werden, weil in der Richtung der Oszillation der Dipole, senkrecht auf den gebrochenen Strahl, keine Energie abgestrahlt werden kann. Diesen Einfallswinkel nennt man Brewsterwinkel.
 \subsection{Spannungsoptik}
 \subsection{Optische Aktivität}
-
+Durch gleichmäßigen Druck auf eine Probe aus Plexiglas lässt sich die Achse, in der der Druck wirkt, zur einen optischen Achse der Probe machen. Fällt auf diese Achse wird es in einen ordentlichen und einen außerordentlichen Strahl aufgespalten
+Für den gemessenen Drehwinkel $\alpha$, den spezifischen Drehwinkel $[\alpha]$, die Zuckerkonzentration $C$ und die Durchtrittslänge $l$ gilt:
+\begin{equation*}
+\alpha=[\alpha]\cdot C \cdot l
+\end{equation*} 
+\begin{equation}
+\label{eq:SpezDrehwinkel}
+[\alpha]=\frac{\alpha}{ C \cdot l }
+\end{equation} 
 \section{Aufbau}
 \subsection{Brewster Winkel}
 \subsection{Spannungsoptik}
 \subsection{Optische Aktivität}
-
+Wir verwenden für die Messung des Drehsinns ein Halbschattenpolarimeter von Lippich und halten Ausschau nach der Abfolge der Farben \textbf{grün - blau - rot - gelb} bei Drehung des Analysators.\\
+Für die Messung des spezifischen Drehwinkels einer Zuckerlösung verwenden wir ein Polarimeter nach Laurent der Fa. Krüss.
 \section{Durchführung}
 \subsection{Brewster Winkel}
 \subsection{Spannungsoptik}
@@ -195,9 +206,21 @@ Der Mittelwert für $S$ aus den Ordnungen 2 bis 5 und daraus $C$ ist
 $$\boxed{S=(127.0 \pm 6.4)\si{N/mm} \Rightarrow C=(4.64 \pm 0.24) \cdot 10^{-6}\si{mm^2/N}}$$
 
 \subsection{Optische Aktivität}
-2 der Quarzproben drehten im mathematisch positiven Sinn, eine im mathematisch negativen Sinn.\\
+Wenn die Ausbreitungsrichtung des Lichtes als positive Koordinatenrichtung gewählt wird, drehten 2 der Quarzproben im mathematisch positiven Sinn, also linksdrehend, und eine im mathematisch negativen Sinn, also rechtsdrehend.\\
+Wir vermischten $(2.0 \pm 0.1)$ g Zucker mit $(20 \pm 1)\text{ml} \approx (20 \pm 1)$ g Wasser. Das ergibt die Konzentration:
+$$C=\frac{(2.0 \pm 0.1) \text{g Zucker}}{(20 \pm 1) \text{g Wasser}}$$
+$$\Delta C= \sqrt{\frac{\Delta Zucker^2}{Wasser^2}+\frac{Zucker^2 \cdot \Delta Wasser^2}{Wasser^4}} = \sqrt{\frac{0.1^2}{20^2}+\frac{4}{20^4}}\approx 0.01$$
+\vspace{0.5cm}
+$$C=(0.1\pm0.01)$$
+Die Zuckerlösung drehte das Licht um $13^\circ 6' \pm 3'$, und zwar in mathematisch negativem Sinn. \\
+Daraus, und mit der Länge $l$=2dm, schließen wir mit der Gleichung (\ref{eq:SpezDrehwinkel}) und der Unsicherheit:
+$$\Delta [\alpha] = \sqrt{\frac{\Delta \alpha^2}{l^2\cdot C^2}+\frac{\alpha^2 \cdot \Delta C ^2}{l^2\cdot C^4}}$$
+$$\Delta [\alpha] = \sqrt{\frac{0.5^2}{4\cdot 0.1^2}+\frac{13.1^2\cdot 0.01^2}{4 \cdot 0.1^4}}$$
+$$\Delta [\alpha] \approx 7.1 \frac{^\circ}{dm}$$
 
-$13^\circ 9'$
+\begin{center}
+\fbox{$[\alpha] = (65.5 \pm 7.1)\frac{^\circ}{dm}$}
+\end{center}
 \section{Diskussion}
 \subsection{Brewster Winkel}
 \subsection{Spannungsoptik}
