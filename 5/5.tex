@@ -99,14 +99,28 @@
 			\begin{flushleft}
 			\LARGE{\textbf{Betreuer:\Large{ KLEPP }}}		
 			\end{flushleft}
-			
+
+\newpage
 \section{Aufgabenstellung}
 Wir untersuchen mittels polarisiertem Licht verschiedene Eigenschaften von Materialien, wie die Schwingungsrichtung der Dipole in einer Glasplatte, die den Brewsterwinkel vorgibt, die Spannungszustände in einer Plexiglasprobe unter Druck und die optische Aktivität von Quarz und einer Zuckerlösung.
 
 \section{Theorie}
 \subsection{Brewster Winkel}
-Wenn Licht auf eine Glasplatte trifft und in ihr gebrochen wird, oszillieren die elektrischen Dipole in der Platte senkrecht auf die Ausbreitungsrichtung des gebrochenen Strahls. Wenn linear polarisiertes Licht nun so auf die Platte fällt, dass der Winkel eines an der Oberfläche reflektierten Strahles senkrecht auf den des gebrochenen Strahles stehen würde, kann kein Licht reflektiert werden, weil in der Richtung der Oszillation der Dipole, senkrecht auf den gebrochenen Strahl, keine Energie abgestrahlt werden kann. Diesen Einfallswinkel nennt man Brewsterwinkel.
+Wenn Licht auf eine Glasplatte trifft und in ihr gebrochen wird, oszillieren die elektrischen Dipole in der Platte senkrecht auf die Ausbreitungsrichtung des gebrochenen Strahls. Wenn linear polarisiertes Licht nun so auf die Platte fällt, dass der Winkel eines an der Oberfläche reflektierten Strahles senkrecht auf den des gebrochenen Strahles stehen würde, kann kein Licht reflektiert werden, weil in der Richtung der Oszillation der Dipole, senkrecht auf den gebrochenen Strahl, keine Energie abgestrahlt werden kann. Diesen Einfallswinkel nennt man Brewsterwinkel.\\
+\\
+Die Formel 
+$$\tan \alpha_B=\frac{n_2}{n_1}$$
+gibt den Zusammenhang zwischen dem Brewsterwinkel und den Brechungsindizes der beiden Medien an.
+
 \subsection{Spannungsoptik}
+
+In der Spannungsoptik wird mithilfe von polarisiertem Licht die Spannungsverteilung in lichtdurchlässigen Körpern untersucht. Bei einem doppelbrechenden Material (optisch anisotrop) wird die Polarisationsebene des einfallenden Lichts gedreht. Wird nun der Körper verformt ändert sich das Licht beim Durchgang durch den Körper. Diese Veränderung wird in diesem Experiment beobachtet.\\
+Die Hauptgleichung der Spannungsoptik ist:
+$$\delta\frac{1}{S}(\sigma_1 - \sigma_2)d$$
+wo $S=\lambda/C$ die Spannungsoptische Konstante, $\sigma_i$ die Hauptspannungen und $d$ die Dicke der Probe. \\
+$\delta$ ist die Phasenverschiebung, die im Sinne einer Ordnungszahl angegeben wird: $\delta=0,1,2,...$\\
+Es treten Isochromaten und Isoklinen auf. Die Isochromaten sind experimentell gefundene Linien gleicher Hauptspannungsdifferenz ($\sigma_1-\sigma_2$). Wenn die Hauptspannungen mit der Polarisationsrichtung zusammenfallen, sieht man Isoklinen.
+
 \subsection{Optische Aktivität}
 Durch gleichmäßigen Druck auf eine Probe aus Plexiglas lässt sich die Achse, in der der Druck wirkt, zur einen optischen Achse der Probe machen. Fällt auf diese Achse wird es in einen ordentlichen und einen außerordentlichen Strahl aufgespalten
 Für den gemessenen Drehwinkel $\alpha$, den spezifischen Drehwinkel $[\alpha]$, die Zuckerkonzentration $C$ und die Durchtrittslänge $l$ gilt:
@@ -119,7 +133,11 @@ Für den gemessenen Drehwinkel $\alpha$, den spezifischen Drehwinkel $[\alpha]$,
 \end{equation} 
 \section{Aufbau}
 \subsection{Brewster Winkel}
+Für das Experiment verwenden wir eine Lichtquelle, einen Polarisator (Glan-Thompson-Prisma), eine drehbare Planparallele Platte und einen drehbaren Photodetektor, mit dem die Intensität des reflektierten Lichtes über einen Photowiderstand an einem Ampéremeter abgelesen werden kann.\\
+Die Polarisation des Lichts wird über die Drehung des Prismas eingestellt (Strichmarkierung).
+
 \subsection{Spannungsoptik}
+
 \subsection{Optische Aktivität}
 Wir verwenden für die Messung des Drehsinns ein Halbschattenpolarimeter von Lippich und halten Ausschau nach der Abfolge der Farben \textbf{grün - blau - rot - gelb} bei Drehung des Analysators.\\
 Für die Messung des spezifischen Drehwinkels einer Zuckerlösung verwenden wir ein Polarimeter nach Laurent der Fa. Krüss.
@@ -130,15 +148,16 @@ Für die Messung des spezifischen Drehwinkels einer Zuckerlösung verwenden wir 
 
 \section{Ergebnisse}
 \subsection{Brewster Winkel}
-Aus dem gemessenen Winkel $\delta$ ergibt sich der Einfallswinkel $\alpha=\frac{180-\delta}{2}$\\
-Der Winkel $\delta=180-2\alpha_1$
-Ohne Platte 47\% bei 3mA bei -0°20'
+Aus dem gemessenen Winkel $\delta$ ergibt sich der Einfallswinkel $\alpha=\frac{180-\delta}{2}$.\\
+Ohne Platte sehen wir die maximale Intensität von $1.41 \si{mA}$ bei $-0^\circ20'$. Da wir im Folgenden gar nicht so exakt messen ($\pm 50'$), kann dieser Offset vernachlässigt werden.\\
+\\
+Die Messung ergibt schließlich folgende Werte:
 
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
 \hline
-$\alpha$ ($^\circ$) & $\delta$ ($^\circ$) & $I_1$ ($mm$) & $I_2$ ($mm$)\\
+$\alpha$ ($^\circ, \pm 50'$) & $\delta$ ($^\circ, \pm 50'$) & $I_1$ ($\si{mA}$) & $I_2$ ($\si{mA}$)\\
 \hline
 35 & 110 & 0.114 & 0.045\\
 40 & 100 & 0.132 & 0.037\\
@@ -151,6 +170,30 @@ $\alpha$ ($^\circ$) & $\delta$ ($^\circ$) & $I_1$ ($mm$) & $I_2$ ($mm$)\\
 \end{tabular}
 \end{center}
 \end{table}
+\vspace{0.5mm}
+
+Wobei die Unsicherheit der Intensitäten immer $\pm$ die letzte angegebene Stelle ist. Leider haben wir keine Zwischenwerte nahe des Minimums gemessen.
+
+\begin{center}
+\begin{figure}[H]
+\begin{subfigure}{0.52\textwidth}
+\includegraphics[width=0.9\linewidth]{reflexion_senkrecht.eps}
+\caption{}
+\end{subfigure}
+\begin{subfigure}{0.52\textwidth}
+\includegraphics[width=0.9\linewidth]{reflexion_parallel.eps}
+\caption{}
+\end{subfigure}
+\caption{Die Intensität des reflektierten Lichts als Funktion des Winkels für senkrecht (a) und parallel (b) zur Einfallsebene polarisiertes Licht.}
+\end{figure}
+\label{fig:brewster}
+\end{center}
+
+Aus Abbildung \ref{fig:brewster} kann der Brewster-Winkel mittels Augenmaß als das Minimum in (b) bestimmt werden.
+$$\boxed{\alpha_B=(56 \pm 1)^\circ}$$
+Die Unsicherheit wird aufgrund der Methode so gewählt.
+Aus dem Brewster Winkel ergibt sich mit $\tan \alpha_B=\frac{n_2}{n_1}$ und dem Brechungsindex der Luft $n_1 \approx 1$ der Brechungsindex der Platte. Die Unsicherheit dazu wird mithilfe der Größtfehlerabschätzung angegeben.
+$$\boxed{n_2=\tan \alpha_B=1.48 \pm 0.05}$$
 
 %\begin{table}
 %\begin{center}
