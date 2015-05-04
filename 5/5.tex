@@ -138,14 +138,19 @@ Die Polarisation des Lichts wird über die Drehung des Prismas eingestellt (Stri
 
 \subsection{Spannungsoptik}
 
+Wir verwenden eine monochromatische Lichtquelle, in unserem Fall eine Natriumdampflampe mit einer Wellenlänge $\lambda$=590nm, vor der ein drehbarer Polarisationsfilter steht. Zwischen diesen Filter und einen gleichen platzieren wir eine hydraulische Presse, die senkrecht Druck von maximal 15 bar auf eine Plexiglasprobe ausübt. Wir orientieren den Polarisationsfilter direkt vor der Lampe waagrecht, damit das einfallende Licht nicht in der selben Richtung polarisiert ist entlang der die Presse Kraft ausübt, denn entlang dieser entsteht eine optische Achse im Material. Wären die beiden gleich orientiert würden Isoklinen entstehen, für unsere Messmethode des Spannungsoptische Konstante des Materials ist aber eine sorgfältige Messung der Isochromaten sorgfältig, bei der Isoklinen stören würden. \\
+Zwischen der Probe und unseren Augen orientieren wir den zweiten Filter senkrecht, und zwar so, dass in unbelastetem Zustand die Probe völlig dunkel erscheint. Dann werden sich bei Belastung Isochromaten einstellen, deren Auftreten wir bemerken und mit ihrem entsprechenden Druck vermerken. Aus der sich ergebenden Beziehung können wir auf den Spannungsoptische Konstante schließen.
+
 \subsection{Optische Aktivität}
 Wir verwenden für die Messung des Drehsinns ein Halbschattenpolarimeter von Lippich und halten Ausschau nach der Abfolge der Farben \textbf{grün - blau - rot - gelb} bei Drehung des Analysators.\\
 Für die Messung des spezifischen Drehwinkels einer Zuckerlösung verwenden wir ein Polarimeter nach Laurent der Fa. Krüss.
 \section{Durchführung}
 \subsection{Brewster Winkel}
+Wir nehmen für die zur Einfallsebene des Lichts senkrechte und parallele Einstellungen des Polarisators einige Messungen der Intensität des reflektierten Lichts bei verschiedenen Winkeln auf. Dabei schließen wir auf die Intensität über Ablesungen des Stroms an einer Photodiode.
 \subsection{Spannungsoptik}
+Das meiste wurde bereits im vorigen Abschnitt gesagt. Zusätzlich erwähnt sei die große Unsicherheit mit der der Druck abgelesen wird, die sich aus der Skala einerseits - die in $\pm$0.5 bar auflöst - und durch die Maschine andererseits, der wir nicht vertrauen. Deswegen machen wir die Messungen zwei mal. 
 \subsection{Optische Aktivität}
-
+Wir verwenden zwei Polarimeter, eines nach Laurent und eines nach Lippich, wobei das nach Laurent eine Winkelablesung der Drehung der Probe mit einer Genauigkeit von $\pm$3' erlaubt. Das nach Lippich wird nur für eine qualitative Messung des Drehsinns von drei Quarzproben verwendet.
 \section{Ergebnisse}
 \subsection{Brewster Winkel}
 Aus dem gemessenen Winkel $\delta$ ergibt sich der Einfallswinkel $\alpha=\frac{180-\delta}{2}$.\\
@@ -215,14 +220,29 @@ $$\boxed{n_2=\tan \alpha_B=1.48 \pm 0.05}$$
 
 
 \subsection{Spannungsoptik}
-Durchmesser $a=7.5cm$, also Fläche: $A=(a/2)^2\pi=441.7mm^2$\\
+
+\begin{table}H
+\begin{center}
+\begin{tabular}{|c|}
+\hline Durchmesser $a=7.5cm$, also Fläche: $A=(a/2)^2\pi=441.7mm^2$\\
+\hline
 Dicke der Probe: $d=10.3mm$\\
+\hline
 Querschnittsfläche: $10.3mm^2=106.09mm^2$\\
+\hline
 $1 bar = 0.1 N/mm^2$\\
+\hline
 $S=\frac{\sigma d}{\delta}$\\
+\hline
 $\lambda=590nm$\\
-$C_=\frac{\lambda}{S}$\\
-\\
+\hline
+$C_=\frac{\lambda}{S}$ \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Verschiedene verwendete Größen}
+\end{table}
+
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|r|}
@@ -267,11 +287,13 @@ $$\Delta [\alpha] \approx 7.1 \frac{^\circ}{dm}$$
 \end{center}
 \section{Diskussion}
 \subsection{Brewster Winkel}
+Wie erwartet stellen wir für eine zur Einfallsebene parallele Polarisation ein Minimum des reflektierten Lichtes fest, während für die darauf senkrechte Polarisationsrichtung kein ähnlicher, sondern eher ein linearer Zusammenhang festgestellt werden kann. Die Bedeutung der Polarisationsrichtung für die Reflexion an einer Glasplatte konnte dadurch eindrucksvoll veranschaulicht werden.
 \subsection{Spannungsoptik}
 
 Der Mittelwert aller fünf Messwerte ist $S=(119 \pm 19)\si{N/mm}$. Vernachlässigen wir allerdings den Wert bei der 1. Ordnung erhalten wir $S=(127.0 \pm 6.4)\si{N/mm}$; dieser Wert liegt sehr gut innerhalb der 1$\sigma$ Vertrauensbereiche der anderen Messwerte! Darum gehen wir davon aus dass die Messung bei der 1. Ordnung nicht genau war, eine Feststellung, die weiter davon bestärkt wird dass in einer zweiten Messung ein Wert von $2.5 \si{bar}$ gemessen wurde.\\
 Bedenken wir zusätzlich, dass wir eine Unsicherheit von $0.5 \si{bar}$ für die Messung des Drucks annehmen, bedeutet das also, dass der Wert der 1. Ordnung eigentlich ($2.0 \pm 1.0)\si{bar}$ beträgt. Das ist bereits eine relative Unsicherheit von 50\%, wodurch auch dieser Messwert innerhalb der Unsicherheitsgrenzen liegt. 
 
 \subsection{Optische Aktivität}
-																					
+Falls alle drei Quarzproben wirklich aus Quarz bestanden, was unsere kümmerlichen kristallographischen Kompetenzen uns aber versagten zu ergründen, ist es beeindruckend zu beobachten dass sie in unterschiedliche Richtungen drehen. Dabei vermuten wir einen Zusammenhang der Dicke der Probe mit ihrer Drehrichtung, denn die dünnste drehte in die andere, die mathematisch negative.\\
+Wir haben nachgeforscht und sind über wissenschaftshistorische Goldnuggets gestoßen, als wir entdeckten, dass der veraltete Name "Dextrose" für Glucose vom lateinischen Wort "dexter" für "rechts" stammt, da sie rechtsdrehend ist! Ähnlich für die "Laevulose", die frühere Fructose, die "laevus", "links", dreht. Der von uns verwendete Rübenzucker lässt sich ganz allgemein als Saccharose bezeichnen, die laut wikipedia rechtsdrehend, also mathematisch negativ ist - was sich mit unserer Beobachtung deckt. 
 \end{document}
