@@ -1,5 +1,6 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=1cm,footskip=.5cm]{geometry}
 \usepackage{multicol}
 \usepackage{amsmath}
 \usepackage{float}
@@ -112,14 +113,31 @@ L(\lambda,T)d\lambda = \frac{2hc^2}{\lambda^5} \cdot \frac{1}{\exp\left(\frac{hc
 wo $L(\lambda,T)d\lambda$ die gerichtete spektrale Strahldichte, abhängig von Wellenlänge und Temperatur. $L$ hat die Einheit $\frac{W}{m^2}\frac{sr}{nm}$.\\
 \\
 
-$$\frac{P_1}{P_2} = \frac{T_1^4}{T_2^4}$$
-wo $P_i$ die zugeführte elektrische Leistung und $T_i$ die Temperatur.
-$$\ln \frac{I_1}{I_2} = \frac{1}{T_1} \left(\sqrt[4]{\frac{P_1}{P_2}}-1\right) \cdot \frac{ch}{k\lambda}$$
-wo $I_i$ die Lichtstärke
-$$\frac{I_1}{I_2} = \frac{r_2^2}{r_1^2}$$
-wo $I_i$ die Lichtstärken und $r_i$ die Abstände von der Lichtquelle.
+\begin{align}
+\label{waermetheorie}
+\frac{P_1}{P_2}& = \frac{T_1^4}{T_2^4} \\
+\ln \frac{I_1}{I_2} &= \frac{1}{T_1} \left(\sqrt[4]{\frac{P_1}{P_2}}-1\right) \cdot \frac{ch}{k\lambda} \\
+\frac{I_1}{I_2} &= \frac{r_1^2}{r_2^2}
+\label{waermeende}
+\end{align}
+
+wo $P_i$ die zugeführte elektrische Leistung und $T_i$ die Temperatur, 
+$I_i$ die Lichtstärken und $r_i$ die Abstände von der Lichtquelle bedeuten.
+Hier machen wir noch auf einen Fehler in der Aufgabenstellung aufmerksam: Dort war $\frac{I_1}{I_2} = \frac{r_2^2}{r_1^2}$ angegeben, richtig ist aber $\frac{I_1}{I_2} = \frac{r_1^2}{r_2^2}$, wie man an folgender Herleitung sieht:
 
 
+\begin{align*}
+E&=\frac{I}{r^2}\\
+E_1&= E_ 2 \\
+\Rightarrow \frac{I_1}{r_1^2}&= \frac{I_2}{r_2^2} \\
+\Rightarrow I_1&= \frac{I_2 \cdot \textbf{$r_1^2$}}{r_2^2} \\
+\Rightarrow \frac{I_1}{I_2}&= \frac{r_1^2}{r_2^2}
+\end{align*}
+
+Schließlich formen wir all diese Gleichungen zu einem Ausdruck für $T_1$ um:
+\begin{equation}
+T_1=\frac{1}{ln \frac{I_1}{I_2}}\cdot \left( \sqrt[4]{\frac{P_1}{P_2}-1} \right) \cdot \frac{c\cdot h}{k_B\cdot \lambda}
+\end{equation} 
 \section{Aufbau}
 \subsection{Planck'sches Wirkungsquantum}
 Wir verwenden eine Quecksilberdampflampe, eine Fotozelle in einem geerdeten Metallzylinder (Fotokathode und Anodenring) und ein Pikoamperemeter zur Detektion des Fotostroms.
@@ -228,22 +246,20 @@ Die Elementarladung $e=1.602177 \cdot 10^{-19}C$, die Lichtgeschwindigkeit $c=2.
 
 \begin{figure}
 \centering
-\begin{subfigure}{0.45\textwidth}
-\includegraphics[width=\textwidth, angle=-90]{5187.eps}
+\begin{subfigure}{0.48\linewidth}
+\includegraphics[width=0.75\linewidth, angle=-90]{5187.eps}
 \end{subfigure}
-\hfill	
-\begin{subfigure}{0.45\textwidth}
-\includegraphics[width=\textwidth, angle=-90]{5521.eps}
+\begin{subfigure}{0.48\linewidth}
+\includegraphics[width=0.75\linewidth, angle=-90]{5521.eps}
 \end{subfigure}
-\begin{subfigure}{0.45\textwidth}
-\includegraphics[width=\textwidth, angle=-90]{7366.eps}
+\begin{subfigure}{0.48\textwidth}
+\includegraphics[width=0.75\linewidth, angle=-90]{7366.eps}
 \end{subfigure}
-\hfill	
-\begin{subfigure}{0.45\textwidth}
-\includegraphics[width=\textwidth, angle=-90]{6908.eps}
+\begin{subfigure}{0.48\textwidth}
+\includegraphics[width=0.75\linewidth, angle=-90]{6908.eps}
 \end{subfigure}
-\begin{subfigure}{0.45\textwidth}
-\includegraphics[width=\textwidth, angle=-90]{8213.eps}
+\begin{subfigure}{0.48\textwidth}
+\includegraphics[width=0.75\linewidth, angle=-90]{8213.eps}
 \end{subfigure}
 \end{figure}
 
@@ -253,14 +269,25 @@ Die Elementarladung $e=1.602177 \cdot 10^{-19}C$, die Lichtgeschwindigkeit $c=2.
 %Abstand Ablesemarke - strahlende Fläche: $38\pm 1 \si{mm}$\\
 %Abstand Ablesemarke - Fotozelle: $17.5 \pm 0.5 \si{mm}$\\
 %Der Abstand r soll den Wert 50cm nicht unterschreiten.\\
-Glühlampe steht anfangs auf 2cm.
-Modus A: $I=(3.82 \pm 0.01)A$, $U=(3.65 \pm 0.01)V$\\
-Modus C: $I=(4.81 \pm 0.01)A$, $U=(5.63 \pm 0.01)V$\\
+Modus A: \begin{center}
+
+ \fbox{$I=(3.82 \pm 0.01)\si{A}$ \hspace{8mm} $U=(3.65 \pm 0.01)\si{V}$}\\
+
+Daraus berechnet:\\
+ \fbox{$P_1=U\cdot I = (13.94 \pm 0.06) \si{W}$}
+ \end{center}
+Modus C: \begin{center} \fbox{$I=(4.81 \pm 0.01)\si{A}$ \hspace{8mm} $U=(5.63 \pm 0.01)\si{V}$} \\
+
+Daraus berechnet:\\
+ \fbox{$P_2=U\cdot I = (27.08 \pm 0.08) \si{W}$}
+\end{center}
+Die Unsicherheiten wurden mittels der Gaußschen Fehlerfortpflanzung ermittelt.\\
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{|c|c|c|}
 \hline
 $r$ (cm) & $U_A$ (mV $\pm$ 1mV) & $U_C$ (mV $\pm$ 1mV)\\
+\hline
 97 & 49 & 259 \\
 92 & 54 & 289 \\
 87 & 59 & 321 \\
@@ -282,13 +309,55 @@ $r$ (cm) & $U_A$ (mV $\pm$ 1mV) & $U_C$ (mV $\pm$ 1mV)\\
 
 %Berechnen Sie für beide Betriebsbedingungen die Strahlungstemperaturen der Glühlampe. 12 und 13
 
-$$\frac{P_1}{P_2} = \frac{T_1^4}{T_2^4}$$
-$$\ln \frac{I_1}{I_2} = \frac{1}{T_1} \left(\sqrt[4]{\frac{P_1}{P_2}}-1\right) \cdot \frac{ch}{k\lambda}$$
-$$\frac{I_1}{I_2} = \frac{r_2^2}{r_1^2}$$
+\begin{figure}
+\centering
+\begin{subfigure}{0.48\linewidth}
+\includegraphics[width=0.75\linewidth, angle=-90]{niedrigetemp.eps}
+\caption{ \label{figLowTemp} Betriebsmodus A}
+\end{subfigure}
+\begin{subfigure}{0.48\linewidth}
+\includegraphics[width=0.75\linewidth, angle=-90]{hohetemp.eps}
+\caption{Betriebsmodus \label{figHighTemp} C}
+\end{subfigure}
+\caption{Die der Beleuchtungsstärke proportionale Spannung an der Fotozelle, gegen das Inverse des Abstandsquadrates}
+\end{figure}
 
+Mittels linearer Fits wurden die Anstiege der Beleuchtungsstärken gegen die Inversen der Abstandsquadrate gewonnen:\\
+Für Abb. (\ref{figLowTemp}):  (35,15 $\pm$ 0,30 ) \\
+Für Abb. (\ref{figHighTemp}): (209,55 $\pm$ 0,30) \\
+Wir verwenden diese Werte nun als $r_1^2$ und $r_2^2$ in den Formeln (\ref{waermetheorie}) bis (\ref{waermeende}) und ermitteln die Temperaturen der Lampe: \\
+\begin{center}
+$T_1=2201.4 K$ \\
+Wir berechnen $T_2$ aus $T_1$: \\
+\begin{equation}
+T_2=\frac{T_1}{\sqrt[4]{\frac{P_1}{P_2}}} 
+\end{equation}
+$T_2=2599.0 K$ \\
+\end{center}
+Wir beginnen eine Fehlerfortpflanzungsorgie, auf deren Methode wir in der Diskussion eingehen:
+\begin{align*}
+&I_{rel}=\frac{I_1}{I_2}\\
+&\Delta I_{rel}=\sqrt{ \left(\frac{\delta I_{rel}}{\delta r_1^2}\right)^2 \cdot \Delta (r_1^2)^2 + \left(\frac{\delta I_{rel}}{\delta r_2^2}\right)^2 \cdot \Delta (r_2^2)^2 } = 0.0014156 \\
+&\Delta ln (I_{rel})= \frac{1}{2} \cdot ( ln(I_{rel}+ \Delta I_{rel}) - ln ( I_{rel} - \Delta I_{rel}) ) =  0.00844\\
+&P_{rel}=\frac{P_1}{P_2} \\
+&\Delta P_{rel} = \sqrt{ \left(\frac{\delta P_{rel}}{\delta P_1}\right)^2 \cdot \Delta P_1^2 + \left(\frac{\delta P_{rel}}{\delta P_2}\right)^2 \cdot \Delta P_2^2)} =  0.0032 \\
+&\Delta \sqrt[4]{P_{rel}} = \sqrt[4]{P_{rel}+ \Delta P_{rel}} -\sqrt[4]{P_{rel}-\Delta P_{rel}} = 0.0026 \\
+&\Delta T_1 = \sqrt{ \frac{ (\Delta \sqrt[4]{P_{rel}})^2}{ln(I_{rel})^2} \cdot \left( \frac{c \cdot h}{k_B\cdot \lambda} \right) ^2 + \frac{ (\sqrt[4]{P_{rel}})^2 \cdot (\Delta ln(I_{rel}))^2}{ln(I_{rel})^4} \cdot \left( \frac{c \cdot h}{k_B \cdot \lambda}  \right) ^2} = \textbf{ 69 } ^{\circ} K \\
+&\Delta T_2 = \sqrt{ \frac{ ( \Delta T_1)^2}{\sqrt{P_{rel}}} + \frac{T_1^2 \cdot ( \Delta \sqrt[4]{P_{rel}})^2}{16 \cdot P_{rel}^{\frac{6}{4}} } } = \textbf{ 82 } ^{\circ} K
+\end{align*}
+Daraus folgt als Endergebnis für die Temperaturen:
+\begin{center}
+\fbox{
+$T_1=(2200 \pm 70) ^{\circ} K$}
+
+\fbox{ 
+$T_2=(2600 \pm 90) ^{\circ} K$}
+\end{center}
 \section{Diskussion}
 \subsection{Planck'sches Wirkungsquantum}
 Es fällt auf dass der Fotostrom mit der Frequenz des einfallenden Lichts steigt.
 \subsection{Wärmestrahlung}
-																								
+Wir haben bei der Berechnung der Unsicherheit einen kleinen mathematischen Trick verwendet. Dabei haben wir den langen Ausdruck für $T_1$ nicht nach jeder einzelnen Messgröße abgeleitet, sondern erst die Unsicherheiten der zusammengesetzten Größen wie $\sqrt[4]{\frac{P_1}{P_2}}$ bestimmt und dann nach diesen abgeleitet. Wir hoffen, dass das uns die Rechnung erleichtert hat, sind uns aber nicht sicher. \\
+Die Unsicherheiten der $r_i^2$ wurden in der Unsicherheit der linearen Fits berücksichtigt. Den größten Beitrag für die Unsicherheit der Temperaturen liefert die Unsicherheit der relativen Leistung, was vor allem durch die vierte Potenz im Nenner des Summanden in der Gaußschen Fehlerfortpflanzung, der die Unsicherheit der relativen Intenstität im Zähler trägt, verstärkt wird. \\
+																							
 \end{document}
