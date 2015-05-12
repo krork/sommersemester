@@ -12,8 +12,9 @@
 \usepackage[german]{babel}
 \usepackage{textcomp}
 \usepackage{mathtools}
-\linespread{1.3}
+\linespread{1.1}
 \usepackage{parskip}
+%\setlength{\parskip}{14pt}
 \setlength{\parindent}{12pt}
 
 \begin{document}
@@ -155,7 +156,9 @@ Wir machen ungefähr 10 Messungen des Stroms an der Fotokathode mit einem Pikoam
 
 Durch lineare Extrapolation der Spannungsabhängigkeit des Stroms können wir auf die Gegenspannung, also auf die kinetische Energie der Elektronen schließen, der wir eine Wellenlängenabhängigkeit unterstellen und sie darauf untersuchen.
 \subsection{Wärmestrahlung}
-Wir messen die Spannung an einem Fotosensor für verschiedene Abstände des Sensors von einer Glühlampe, die in zwei unterschiedlichen Betriebsmodi glüht. Dabei machen wir für jeden Abstand eine Messung der Spannung, und messen dann für die gleichen Abstände beim zweiten Betriebsmodus. Für jeden Betriebsmodus messen wir weiterhin die elektrische Leistung an der Glühlampe. Wir plotten anschließend die der Lichtintensität proportionalen Spannungen am Fotosensor gegen das Inverse der Abstandsquadrate und erhalten natürlich ansteigende Geraden. Durch das Verhältnis der Anstiege dieser Geraden bekommen wir einen Ausdruck aus dem wir, gemeinsam mit den gemessenen Leistungen, auf die Temperaturen des Glühfadens in den unterschiedlichen Modi schließen können.
+Wir messen die Spannung an einem Fotosensor für verschiedene Abstände des Sensors von einer Glühlampe, die in zwei unterschiedlichen Betriebsmodi glüht. Dabei machen wir für jeden Abstand eine Messung der Spannung, und messen dann für die gleichen Abstände beim zweiten Betriebsmodus. Für jeden Betriebsmodus messen wir weiterhin die elektrische Leistung an der Glühlampe.
+
+ Wir plotten anschließend die der Lichtintensität proportionalen Spannungen am Fotosensor gegen das Inverse der Abstandsquadrate und erhalten natürlich ansteigende Geraden. Durch das Verhältnis der Anstiege dieser Geraden bekommen wir einen Ausdruck aus dem wir, gemeinsam mit den gemessenen Leistungen, auf die Temperaturen des Glühfadens in den unterschiedlichen Modi schließen können.
 
 \section{Ergebnisse}
 \subsection{Planck'sches Wirkungsquantum}
@@ -352,7 +355,7 @@ Wir beginnen eine Fehlerfortpflanzungsorgie, auf deren Methode wir in der Diskus
 &\Delta ln (I_{rel})= \frac{1}{2} \cdot ( ln(I_{rel}+ \Delta I_{rel}) - ln ( I_{rel} - \Delta I_{rel}) ) =  0.00844\\
 &P_{rel}=\frac{P_1}{P_2} \\
 &\Delta P_{rel} = \sqrt{ \left(\frac{\delta P_{rel}}{\delta P_1}\right)^2 \cdot \Delta P_1^2 + \left(\frac{\delta P_{rel}}{\delta P_2}\right)^2 \cdot \Delta P_2^2)} =  0.0032 \\
-&\Delta \sqrt[4]{P_{rel}} = \frac{1}{2}  \sqrt[4]{P_{rel}+ \Delta P_{rel}} -\sqrt[4]{P_{rel}-\Delta P_{rel}} = 0.0026 \\
+&\Delta \sqrt[4]{P_{rel}} = \frac{1}{2} \left(  \sqrt[4]{P_{rel}+ \Delta P_{rel}} -\sqrt[4]{P_{rel}-\Delta P_{rel}} \right) = 0.0026 \\
 &\Delta T_1 = \sqrt{ \frac{ (\Delta \sqrt[4]{P_{rel}})^2}{ln(I_{rel})^2} \cdot \left( \frac{c \cdot h}{k_B\cdot \lambda} \right) ^2 + \frac{ (\sqrt[4]{P_{rel}})^2 \cdot (\Delta ln(I_{rel}))^2}{ln(I_{rel})^4} \cdot \left( \frac{c \cdot h}{k_B \cdot \lambda}  \right) ^2} = \textbf{ 69 } ^{\circ} K \\
 &\Delta T_2 = \sqrt{ \frac{ ( \Delta T_1)^2}{\sqrt{P_{rel}}} + \frac{T_1^2 \cdot ( \Delta \sqrt[4]{P_{rel}})^2}{16 \cdot P_{rel}^{\frac{6}{4}} } } = \textbf{ 82 } ^{\circ} K
 \end{align*}
