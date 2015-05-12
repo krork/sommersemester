@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[12pt,a4paper,twopage]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper,margin=1cm,footskip=.5cm]{geometry}
 \usepackage{multicol}
@@ -12,6 +12,9 @@
 \usepackage[german]{babel}
 \usepackage{textcomp}
 \usepackage{mathtools}
+\linespread{1.3}
+\usepackage{parskip}
+\setlength{\parindent}{12pt}
 
 \begin{document}
 
@@ -89,15 +92,16 @@
 \end{verbatim}
 							%Name des Betreuers, das Praktikum betreute.
 			\begin{flushleft}
-			\LARGE{\textbf{Betreuer:\Large{ }}}		
+			\LARGE{\textbf{Betreuer:\Large{ Jürgen KLEPP }}}		
 			\end{flushleft}
 \newpage
 			
 \section{Aufgabenstellung}
-%Im ersten Experiment bestimmen wir das Planck'sche Wirkungsquantum.
+Wir untersuchen die Interaktion elektromagnetischer Strahlung mit Materie an zwei unterschiedlichen Effekten - dem fotoelektrischen Effekt und der Schwarzkörperstrahlung.
 \section{Theorie}
 \subsection{Planck'sches Wirkungsquantum}
-Beim Fotoeffekt werden elektrisch geladene Teilchen aus Materie angeregt (in einen höheren Energiezustand gebracht) oder freigesetzt, wenn sie von elektromagnetischen Wellen bestrahlt wird.\\
+Beim Fotoeffekt werden elektrisch geladene Teilchen aus Materie angeregt (in einen höheren Energiezustand gebracht) oder freigesetzt, wenn sie von elektromagnetischen Wellen bestrahlt wird. 
+
 Bei der Anregung spricht man vom \textit{Inneren Fotoeffekt}, bei Freisetzung von Elektronen vom \textit{Äußeren Fotoeffekt}. Letzteres kommt bei Metallen vor, bei denen man die Leitungselektronen als frei in einem Potentialtopf beweglich beschreiben kann. Werden sie mit Energie größer gleich der notwendigen Austrittsarbeit angeregt, können die Elektronen sich aus dem Metall lösen.\\
 \\
 Einstein-Formel:
@@ -147,7 +151,8 @@ Für den Versuch verwenden wir eine Glühlampe, einen Interferenzfilter (um mono
 
 \section{Durchführung}
 \subsection{Planck'sches Wirkungsquantum}
-Wir machen ungefähr 10 Messungen des Stroms an der Fotokathode mit einem Pikoamperemeter, wobei wir bei jeder Messung die Gegenspannung mit einem Potentiometer variieren. Diese 10 Messungen machen wir jeweils für Licht aus einem von fünf Interferenzfiltern. \\
+Wir machen ungefähr 10 Messungen des Stroms an der Fotokathode mit einem Pikoamperemeter, wobei wir bei jeder Messung die Gegenspannung mit einem Potentiometer variieren. Diese 10 Messungen machen wir jeweils für Licht aus einem von fünf Interferenzfiltern.  
+
 Durch lineare Extrapolation der Spannungsabhängigkeit des Stroms können wir auf die Gegenspannung, also auf die kinetische Energie der Elektronen schließen, der wir eine Wellenlängenabhängigkeit unterstellen und sie darauf untersuchen.
 \subsection{Wärmestrahlung}
 Wir messen die Spannung an einem Fotosensor für verschiedene Abstände des Sensors von einer Glühlampe, die in zwei unterschiedlichen Betriebsmodi glüht. Dabei machen wir für jeden Abstand eine Messung der Spannung, und messen dann für die gleichen Abstände beim zweiten Betriebsmodus. Für jeden Betriebsmodus messen wir weiterhin die elektrische Leistung an der Glühlampe. Wir plotten anschließend die der Lichtintensität proportionalen Spannungen am Fotosensor gegen das Inverse der Abstandsquadrate und erhalten natürlich ansteigende Geraden. Durch das Verhältnis der Anstiege dieser Geraden bekommen wir einen Ausdruck aus dem wir, gemeinsam mit den gemessenen Leistungen, auf die Temperaturen des Glühfadens in den unterschiedlichen Modi schließen können.
@@ -363,7 +368,8 @@ $T_2=(2600 \pm 90) ^{\circ} K$}
 \subsection{Planck'sches Wirkungsquantum}
 Es fällt auf dass der Fotostrom mit der Frequenz des einfallenden Lichts steigt.
 \subsection{Wärmestrahlung}
-Wir haben bei der Berechnung der Unsicherheit einen kleinen mathematischen Trick verwendet. Dabei haben wir den langen Ausdruck für $T_1$ nicht nach jeder einzelnen Messgröße abgeleitet, sondern erst die Unsicherheiten der zusammengesetzten Größen wie $\sqrt[4]{\frac{P_1}{P_2}}$ bestimmt und dann nach diesen abgeleitet. Außerdem haben wir zwei mal eine halbierte Größtfehlerabschätzung verwendet. \\
+Wir haben bei der Berechnung der Unsicherheit einen kleinen mathematischen Trick verwendet. Dabei haben wir den langen Ausdruck für $T_1$ nicht nach jeder einzelnen Messgröße abgeleitet, sondern erst die Unsicherheiten der zusammengesetzten Größen wie $\sqrt[4]{\frac{P_1}{P_2}}$ bestimmt und dann nach diesen abgeleitet. Außerdem haben wir zwei mal eine halbierte Größtfehlerabschätzung verwendet.   
+
 Die Unsicherheiten der $r_i^2$ wurden in der Unsicherheit der linearen Fits berücksichtigt. Den größten Beitrag für die Unsicherheit der Temperaturen liefert die Unsicherheit der relativen Leistung, was vor allem durch die vierte Potenz im Nenner des Summanden in der Gaußschen Fehlerfortpflanzung, der die Unsicherheit der relativen Intenstität im Zähler trägt, verstärkt wird. \\
 																							
 \end{document}
