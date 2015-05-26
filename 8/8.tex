@@ -1,0 +1,152 @@
+\documentclass[12pt,a4paper,twopage]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{a4paper,left=30mm,right=30mm, top=3cm, bottom=30mm} 
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{epsfig,graphicx}
+\usepackage{xcolor,import}
+\usepackage{subcaption}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{siunitx}
+\usepackage[german]{babel}
+\usepackage{textcomp}
+\usepackage{mathtools}
+\linespread{1.1}
+\usepackage{parskip}
+%\setlength{\parskip}{14pt}
+\setlength{\parindent}{12pt}
+
+\begin{document}
+
+\begin{verbatim}
+
+
+\end{verbatim}
+
+\thispagestyle{empty}
+			\begin{center}
+			\Large{Fakultät für Physik}\\
+			\end{center}
+\begin{verbatim}
+
+
+\end{verbatim}
+							%Eintrag des Wintersemesters
+			\begin{center}
+			\textbf{\LARGE SOMMERSEMESTER 2015}
+			\end{center}
+\begin{verbatim}
+
+
+\end{verbatim}
+			\begin{center}
+			\textbf{\LARGE{Physikalisches Praktikum II}}
+			\end{center}
+\begin{verbatim}
+
+
+
+
+\end{verbatim}
+
+			\begin{center}
+			\textbf{\LARGE{PROTOKOLL}}
+			\end{center}
+			
+\begin{verbatim}
+
+
+
+
+
+\end{verbatim}
+
+			\begin{flushleft}
+			\textbf{\Large{Experiment (Nr., Titel)}}:\\
+			\Large{PS8, Halbleiter 2: Transistor und Verstärkungsschaltungen}\\
+							%Experiment Nr. und Titel statt den Punkten eintragen
+			\LARGE{}	
+			\end{flushleft}
+
+\begin{verbatim}
+
+\end{verbatim}	
+							%Eintragen des Abgabedatums, oder des Erstelldatums des Protokolls
+			\begin{flushleft}
+			\textbf{\Large{Datum:}} \Large{22.5.2015}
+			\end{flushleft}
+			
+\begin{verbatim}
+\end{verbatim}
+							%Namen der Protokollschreiber
+		\begin{flushleft}
+			\textbf{\Large{Bachleitner Veronika, Grafendorfer Erik}} 
+			\end{flushleft}
+
+\begin{verbatim}
+
+
+\end{verbatim}
+							%Kurstag und Gruppennummer, zb. Fr/5
+			\begin{flushleft}
+			\textbf{\Large{Kurstag/Gruppe:}} \Large{FR/1}
+			\end{flushleft}
+
+\begin{verbatim}
+
+\end{verbatim}
+							%Name des Betreuers, das Praktikum betreute.
+			\begin{flushleft}
+			\textbf{\Large{Betreuer:}} \Large{Kerstin Hummer}		
+			\end{flushleft}
+\newpage
+\begin{verbatim}
+
+
+\end{verbatim}
+			
+\section{Aufgabenstellung}
+Wir suchen die Funktionsweise und das Verhalten von Transistoren; darunter Kennlinien eines Bipolartransistor und eines Feldeffekttransistors.
+\section{Theorie}
+Aus PS7 wissen wir bereits über Halbleiter und Dioden Bescheid. Der Transistor ist eine von John Bardeen und Walter H. Brattain entdeckte Weiterentwicklung davon. Transistor steht für transfer resistor, was 'übertragbarer Widerstand' bedeutet.
+
+\subsection{Bipolartransistor}
+Beim Bipolartransistor sind Elektronen und Löchern am Ladungstransport beteiligt (daher der Name). Der Transistor besteht aus drei leitenden Zonen. Diese können in npn- oder pnp-Reihenfolge sein. Beide funktionieren auf gleiche Weise, arbeiten aber mit entgegengesetzt gepolter Spannung.\\
+Die Anschlüsse werden als E (Emitter), B (Basis) und C (Kollektor) bezeichnet. Die Basisschicht ist sehr dünn.\\
+Wenn eine ausreichend hohe Potentialdifferenz zwischen Basis und Emitter anliegt ($U_{BE}\approx 0.7V$) können die Löcher aus der Basis mit den Elektronen aus dem Emitter rekombinieren. Überschüssige Elektronen werden von der Basis abgesaugt: Strom kann von der Basis zum Emitter fließen (technische Stromrichtung). Basis-Emitter funktioniert also wie eine Diode in Durchlassrichtung.\\
+Basis-Kollektor kann man jedoch als eine Diode in Sperrrichtung betrachten: näherungsweise fließt hier kein Strom. Wenn eine weitere Spannung zwischen Kollektor und Emitter angelegt ist ($U_{CE}$) gibt es ein elektrisches Feld: Dieses begünstigt, dass der Großteil der Elektronen nicht mit Löchern aus der Basis rekombiniert (die Schicht muss dazu äußerst dünn sein), sondern durch die Basisschicht in den Kollektor diffundiert. Diese Elektronen sind nun also im Einflussbereich der zweiten Spannungsquelle und es fließt Strom durch den Transistor.\\
+Entfernt man allerdings die erste Spannungsquelle haben die Elektronen keinen Grund mehr sich überhaupt zu bewegen und der Strom hört auf zu fließen. So kann der Transistor als Schalter verwendet werden.\\
+Da die Spannung $U_{BE}$ sehr klein sein kann, um diesen Effekt zu erhalten, und der resultierende Strom zwischen Kollektor und Emitter sehr groß ist, wird der Transistor auch als Verstärker verwendet.
+
+\subsubsection{Kennlinien}
+Wie oben bereits erwähnt funktionieren Basis und Emitter gemeinsam wie eine Diode in Durchlassrichtung. Daher ist die zugehörige Strom-Spannungskennlinie (Eingangskennlinie) auch eine Diodenkennlinie.\\
+Basis und Kollektor haben eine Stromsteuerkennlinie, charakterisiert durch die Gleichstromverstärkung
+$$B=\frac{\Delta I_C}{\Delta I_B}$$
+also das Verhältnis zwischen Kollektorstrom $I_C$ und Basisstrom $I_B$. Die Gleichstromverstärkung hängt wiederum von der Kollektor-Emitter-Spannung $U_{CE}$ ab, da bei höherem Potential natürlich mehr Elektronen in den Kollektor fließen werden.\\
+Für Kollektor und Emitter gibt es das Ausgangskennlinienfeld: Hier werden mehrere Kennlinien bei unterschiedlicher Spannung $U_{BE}$ aufgenommen. Man wird bei unseren Messungen erkennen, dass der fließende Strom stark von $U_{BE}$ abhängig ist, nur eine kleine Spannung $U_{CE}$ braucht um zu fließen und schließlich kaum mehr bei höheren Werten von $U_{CE}$ steigt. (Hier sieht man gut die Funktion als Schalter.)
+
+\subsection{Feldeffekt-Transistor}
+Ein Feldeffekttransistor (FET) ist ein unipolare Transistor: nur eine Art von Ladungsträgern, Elektronen (n-Typ) oder Löcher (p-Typ), sorgen für den Stromtransport. Der Emitter entspricht hier der Source und der Kollektor dem Drain. Als Gate bezeichnet man eine Elektrode, die über ein transversales elektrisches Feld den Widerstand des Kanals zwischen Source und Drain steuert. Genauer steuert das elektrische Feld die Breite der Sperrschichten an den Seiten des leitenden Kanals; somit kann man ihn schließen und öffnen.\\
+Wir verwenden hier einen junction-field-effect-transistor (J-FET).
+
+\subsubsection{Kennlinien}
+Die Gate-Drain-Kennlinie (Eingangskennlinie) ist auch hier wieder eine Diodenkennlinie.\\
+Zwischen Drain und Source sehen wir bei niedrigen Spannungen $U_{DS}$ ein Verhalten wie bei einem ohmschen Widerstand. Das ist solange der Fall, bis die Sperrschichten den Kanal so weit verengt haben, dass sie sich berühren und der Kanal somit abgeschnürt wird: pinch-off voltage. Es fließt weiterhin Strom, da die Ladungsträger den abgeschnürten Bereich entlang driften können. Allerdings wird eine weitere Erhöhung der Spannung $U_{DS}$ sich nur noch wenig auf den Drain-Strom $I_D$ auswirken.\\
+Bei verschiedenen Gate-Source-Spannungen $U_{GS}$ sehen wir schließlich ein Ausgangskennlinienfeld.
+
+\section{Aufbau und Durchführung}
+Wir verwenden das Messsystem RC2000. Es besitzt ein Steckbrett mit diversen Untermodulen und eine Software zur Messung und Darstellung der Daten. Es können 2 Spannungen gleichzeitig gemessen werden, von denen eine vom System gesteuert wird, um eine Kennlinie zu messen. Die Ströme werden nur indirekt gemessen, indem man der Software den bekannten (Vor-)Widerstand angibt.\\
+\\
+Für den Transistor ist eine eigene Anschlussbuchse vorhanden, die mit dem Steckbrett verbunden ist.\\
+Für die Schaltungen verwenden wir außerdem Widerstände und Kondensatoren; natürlich müssen auch Verbindungsteile gesetzt und Kabel zur Spannungsquelle bzw. zur Spannungsmessung verlegt werden.\\
+Die Schaltskizzen und die Art der Spannungsquelle, die man für die jeweilige Schaltung benutzt, ist im Anleitungstext zu PS8 gut beschrieben und dort nachzulesen.
+
+\section{Ergebnisse und Diskussion}
+\subsection{Bipolartransistor}
+\subsection{Feldeffekt-Transistor}
+
+
+						
+\end{document}
