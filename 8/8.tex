@@ -145,8 +145,28 @@ Die Schaltskizzen und die Art der Spannungsquelle, die man für die jeweilige Sc
 
 \section{Ergebnisse und Diskussion}
 \subsection{Bipolartransistor}
-\subsection{Feldeffekt-Transistor}
+In Abbildung (\ref{eingangskenn}) ist das Eingangskennlinienfeld des Transistors zum Kollektorstrom dargestellt. Mit einem linearen Fit wurde eine Steigung des linearen Teils von $$B=(221 \pm 1)$$ festgestellt, was der Gleichstromverstärkung B entspricht.
 
+\begin{figure}[H]
+\includegraphics[width=0.7 \linewidth, angle=-90]{eingangskenn.eps}
+\caption{\label{eingangskenn} Eingangskennlinie des bipolaren Transistors zum Kollektorstrom}
+\end{figure}
+
+In Abbildung (3) sind die Diodenkennlinie der Basis-Kollektor-Diode und der Basis-Emitter-Diode zu sehen. Nachdem es sich um einen bipolaren npn-Transistor handelt, dessen Emitter stärker negativ dotiert ist als sein Kollektor, ist der Strom durch die Basis-Kollektor-Diode bei gleicher Spannung größer als durch die Basis-Emitter-Diode - von der Kathode an der Basis strömen die Elektronen leichter durch den positiveren Kollektor als durch den stärker negativen Emitter, dessen Elektronen sich dem einfallenden Anionenstrom entgegenstellen.
+
+In Abbildung (4) ist zu sehen, wie wir 4 mal die Basis-Emitterspannung konstant gehalten haben - jeder von ihnen entspricht eine der Linien - wobei wir dann mit dem rc2000 Modul die Spannung zwischen 0 und 10 V in kurzen Messabständen automatisch durchfahren und den Strom zwischen. Zu beachten ist, wie bei $\approx$0.2V $U_{CE}$ der Strom stark ansteigt und dann annähernd konstant bleibt - einer der Gründe, warum bipolare Transistoren so gut als Schalter zu verwenden sind. Außerdem bemerke man, dass zwischen 660mV und 700mV der Strom stärker ansteigt als zwischen 630mV und 660mV - und zwar anscheinend in größerem Ausmaß als die 10mV mehr in der Schrittlänge erwarten lassen würden.
+
+Bei der Kleinsignalverstärkung fiel auf, dass das Kollektorpotential $U_{C}$ bei Erwärmung in der Schaltung \textit{ohne} Gegenkopplung erst von 7V auf 4.2V abfiel, und dann in der Schaltung \textit{mit} Gegenkopplung auch erst sank, ab 5.5V allerdings wieder zu steigen begann - die Parallelschaltung aus Widerstand und Kondensator tat das ihrige und sorgte über den Spannungsteiler, in den sie eingebaut war, für eine höhere Basis-Kollektor-Spannung, wodurch das Kollektorpotential wieder steigen konnte.
+
+Zur Frequenzabhängigkeit konnten wir beobachten, wie die Verstärkung bei Frequenzen ab 1kHz stark anstieg -  bei niedrigen Frequenzen $<$ 10 Hz war die Verstärkung viel schwächer. Wir vermuten allerdings leider, dass von der Software nicht nur die Achsen fehlerhaft mit V anstatt mV beschriftet wurden, sondern auch teilweise mit ms anstatt s. Wir haben unsere Vermutungen zur richtigen Beschriftung dazugeschrieben.
+
+Um eine Phasenverschiebung zu beobachten haben wir leider zu wenige Messpunkte aufgenommen.
+
+
+\subsection{Feldeffekt-Transistor}
+In Abbildung 5 ist die Kennlinie des Gate-Drain-Übergangs des J-FET zu sehen.
+
+In Abbildung 6 erkennt man schön, dass die Stromstärke ab einer Drain-Source-Spannung im Bereich von 0.5V annähernd konstant bleibt - woran man sieht, dass man einen J-FET zur Bereitstellung einer gleichbleibenden Stromstärke verwenden kann. Die Stromstärkekennlinien sind für verschiedene Gate-Drain-Spannungen zwischen 0 und -2.5V dargestellt.
 
 						
 \end{document}
