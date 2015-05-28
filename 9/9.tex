@@ -1,0 +1,157 @@
+\documentclass[12pt,a4paper,twopage]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=1cm,footskip=.5cm]{geometry}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{epsfig,graphicx}
+\usepackage{xcolor,import}
+\usepackage{subcaption}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{siunitx}
+\usepackage[german]{babel}
+\usepackage{textcomp}
+\usepackage{mathtools}
+\linespread{1.1}
+\usepackage{parskip}
+\setlength{\parindent}{12pt}
+
+\begin{document}
+
+
+\thispagestyle{empty}
+			\begin{center}
+			\Large{Fakultät für Physik}\\
+			\end{center}
+\begin{verbatim}
+
+
+\end{verbatim}
+							%Eintrag des Wintersemesters
+			\begin{center}
+			\textbf{\LARGE SOMMERSEMESTER 2015}
+			\end{center}
+\begin{verbatim}
+
+
+\end{verbatim}
+			\begin{center}
+			\textbf{\LARGE{Physikalisches Praktikum II}}
+			\end{center}
+\begin{verbatim}
+
+
+
+
+\end{verbatim}
+
+			\begin{center}
+			\textbf{\LARGE{PROTOKOLL}}
+			\end{center}
+			
+\begin{verbatim}
+
+
+
+
+
+\end{verbatim}
+
+			\begin{flushleft}
+			\textbf{\Large{Experiment (Nr., Titel):}}\\
+			PS9, Heißluftmotor - Stirlingprozess
+							%Experiment Nr. und Titel statt den Punkten eintragen
+			\LARGE{}	
+			\end{flushleft}
+
+\begin{verbatim}
+
+\end{verbatim}	
+							%Eintragen des Abgabedatums, oder des Erstelldatums des Protokolls
+			\begin{flushleft}
+			\textbf{\Large{Datum:}} \Large{29.5.2015}
+			\end{flushleft}
+			
+\begin{verbatim}
+\end{verbatim}
+							%Namen der Protokollschreiber
+		\begin{flushleft}
+			\textbf{\Large{Bachleitner Veronika, Grafendorfer Erik}} 
+			\end{flushleft}
+
+\begin{verbatim}
+
+
+\end{verbatim}
+							%Kurstag und Gruppennummer, zb. Fr/5
+			\begin{flushleft}
+			\textbf{\Large{Kurstag/Gruppe:}} \Large{FR/1}
+			\end{flushleft}
+
+\begin{verbatim}
+
+
+
+
+
+
+\end{verbatim}
+							%Name des Betreuers, das Praktikum betreute.
+			\begin{flushleft}
+			\LARGE{\textbf{Betreuer:\Large{ }}}		
+			\end{flushleft}
+			
+\section{Aufgabenstellung}
+
+\section{Theorie}
+\subsection{Allgemeine Grundlagen}
+Es gibt thermodynamische Kreisprozesse, bei denen durch verschiedene Zustandsänderungen einem System Wärme zugeführt oder entnommen wird. Solche Zustandsänderungen sind isotherm (Temperatur konstant), adiabatisch (Wärmemenge konstant) und isochor (Volumen konstant).
+\subsubsection{Carnot Prozess}
+Eine Carnot-Maschine benützt eine Arbeitssubstanz, mit der sie einen quasistatischen Kreisprozess ausführt:\\
+\\
+1. Isotherme Zustandsänderung (Expansion). Dabei nimmt as Arbeitsgas die Wärmemenge $Q_{zu}$ auf.\\
+2. Adiabatische Zustandsänderung (Expansion). Dabei hat das Arbeitsgas am Ende die Temperatur $T_2$.\\
+3. Isothemre Zustandsänderung (Kompression). Dabei gibt as Arbeitsgas die Wärmemenge $Q_{ab}$ ab.\\
+4. Adiabatische Zustandsänderung (Kompression). Dabei hat das Arbeitsgas am Ende die Temperatur $T_1$.\\
+\\
+Technisch ist der Carnot-Prozess jedoch nicht durchführbar, da einerseits die direkte Abfolge dieser Zustandsänderungen nicht realisierbar und andererseits die Prozesse in den meisten Wärmekraftmaschinen nicht reversibel sind.\\
+\\
+Der Wirkungsgrad ist gegeben durch:
+$$\eta=\frac{A}{Q_{zu}}=\frac{Q_{zu}-Q_{ab}}{Q_{zu}}=1-\frac{Q_{ab}}{Q_{zu}}$$
+wo $A$ die Arbeit und $Q_{zu}$ bzw. $Q_{ab}$ die zugeführte bzw. abgeführte Wärmemenge sind.\\
+\\
+Der Stirling-Kreisprozess besteht aus isothermen und isochoren Zustandsänderungen:\\
+\\
+1. Isotherme Zustandsänderung (Expansion).\\
+2. Isochore Zustandsänderung (Expansion).\\
+3. Isotherme Zustandsänderung (Kompression).\\
+4. Isochore Zustandsänderung (Kompression).\\
+\\
+Verwendet man die ideale Gasgleichung ($pV=NkT$) sowie die Formeln für die Zustandsänderungen erhält man für den (idealen) Wirkungsgrad:
+$$\eta=\frac{T_1-T_2}{T_1}=1-\frac{T_2}{T_1}$$
+Der reale Wirkungsgrad ist dann gegeben durch
+$$\eta_{real}=\frac{P_{Motor}}{P_{zu}}$$
+wo $P$ die Leistung (Motor bzw. zugeführt) ist. Die Leistung kann in unserem ersten Versuch auch über folgendes Skalarprodukt bestimmt werden:
+$$P=\vec{M}\cdot\vec{\omega}=\vec{F}\times\vec{r}\cdot\vec{\omega}$$
+wo $\vec{M}$ das Bremsdrehmoment, $vec{F}$ die Kraft, $\vec{r}$ der Radius und $\vec{\omega}$ die Winkelgeschwindigkeit ist.\\
+\\
+Bei der \textit{Stirling-Maschine als Kältemaschine} wird im Prinzip ein Kreisprozess wie der oben beschrieben durchgeführt. Da es sich allerdings um eine Kältemaschine handeln soll, wird der Kreispozess jedoch gegen den Uhrzeigersinn durchlaufen.
+
+\section{Aufbau}
+\subsection{Wärmekraftmaschine}
+\subsection{Kältemaschine}
+
+\section{Durchführung}
+
+\subsection{Wärmekraftmaschine}
+\subsection{Kältemaschine}
+
+\section{Ergebnisse}
+\subsection{Wärmekraftmaschine}
+\subsection{Kältemaschine}
+
+\section{Diskussion}
+\subsection{Wärmekraftmaschine}
+\subsection{Kältemaschine}
+																								
+\end{document}
