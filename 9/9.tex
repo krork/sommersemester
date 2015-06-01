@@ -1,6 +1,7 @@
 \documentclass[12pt,a4paper,twopage]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[a4paper,margin=1cm,footskip=.5cm]{geometry}
+\usepackage{geometry}
+\geometry{a4paper,left=30mm,right=30mm, top=3cm, bottom=30mm} 
 \usepackage{multicol}
 \usepackage{amsmath}
 \usepackage{float}
@@ -15,6 +16,7 @@
 \linespread{1.1}
 \usepackage{parskip}
 \setlength{\parindent}{12pt}
+
 
 \begin{document}
 
@@ -148,10 +150,68 @@ Bei der \textit{Stirling-Maschine als Kältemaschine} wird im Prinzip ein Kreisp
 
 \section{Ergebnisse}
 \subsection{Wärmekraftmaschine}
+
+\begin{center}
+\begin{figure}[H]
+\includegraphics[scale=0.7]{bachgraf/heissluft.png}
+\caption{P-V-Diagramm der Wärmekraftmaschine mit angegebener Arbeit (Flächeninhalt).}
+\label{fig:heissluft-pv}
+\end{figure}
+\end{center}
+
+In Abbildung \ref{fig:heissluft-pv} ist das P-V-Diagramm der Wärmekraftmaschine zu sehen. Die Fläche unter der Kurve, und damit die Arbeit, wird vom Programm berechnet als:
+$$A=24450hPa cm^3 =(2.445 \pm 0.001) Ws$$
+\\
+Mit dem Stroboskop kann die Leerlauf-Frequenz gemessen werden:
+$$f_0=(5.26 \pm 0.01)Hz$$
+\\
+Wenn wir die mechanische Arbeit mit der Leerlauf-Frequenz $f_0$ multiplizieren erhalten wir die ideale Leistung des Motors:
+$$\boxed{P_{ideal}=(12.861 \pm 0.025)W}$$
+\\
+Die zugeführte Leistung ergibt sich aus folgenden Strom- bzw. Spannungswerten: 
+$U=(11 \pm 1)V$, $I=(13 \pm 1)A$
+$$\boxed{P_{zu}=U \cdot I = (143 \pm 17)W}$$
+Die Unsicherheit der zugeführten Leistung ergibt sich aus:
+$\sqrt{(U\cdot\Delta I)^2+(I\cdot\Delta U)^2}=\sqrt{11^2+13^2}\approx17.029$
+\\
+Aus der idealen und der zugeführten Leistung können wir den idealen Wirkungsgrad berechnen:
+$$\boxed{\eta_{ideal}=\frac{P_{ideal}}{P_{zu}}=(9.0 \pm 0.1)\%}$$
+\\
+Als nächstes wird der reale Wirkungsgrad des Motors bestimmt, indem wir mit dem Prony'schen Bremszaum eine Leistung unter Belastung abnehmen.
+Wir stellen anhand der Federwaage folgende Bremskraft fest:
+$$F=(0.62-0.16 \pm 0.01)N=(0.46 \pm 0.01)N$$
+wobei die abgezogenen $0.16$ den Nullpunkt auf der Federwaage markieren.\\
+\\
+Die Frequenz war dabei
+$$f=(4.29 \pm 0.01)Hz$$
+\\
+Den Radius des Bremszaums haben wir nicht selbst gemessen aber bei Mitstudenten erfragt: $r=(0.250 \pm 0.002)m$\\
+\\
+Aus diesen drei Werten können wir uns den realen Wirkungsgrad berechnen.\\
+Das Bremsdrehmoment ist $\vec{M}=\vec{F}\times \vec{r}=F\cdot r = (0.115 \pm 0.003)Nm$ und die reale Leistung is daraus:
+$$\boxed{P_{real}=M\cdot f=(0.49 \pm 0.01)Ws}$$
+\\
+Daraus erhalten wir schließlich den realen Wirkungsgrad:
+$$\boxed{\eta_{real}=\frac{P_{real}}{P_{zu}}=(0.35 \pm 0.05)\%}$$
 \subsection{Kältemaschine}
+
+\begin{center}
+\begin{figure}[H]
+\includegraphics[scale=0.7]{bachgraf/kaeltemaschine.png}
+\label{kaeltemaschine-pv}
+\end{figure}
+\end{center}
+
+Erste Messung:
+$8.2^\circ C$ bei $(350 \pm 10)mA$ und $(240 \pm 10)V$, Heizleistung: $(7.0 \pm 0.5)V$ $(1.5 \pm 0.1)A$\\
+
+
+$8.0^\circ C$ bei $(350 \pm 10)mA$ und $(240 \pm 10)V$, Heizleistung: $(8.0 \pm 0.5)V$ $(1.7 \pm 0.1)A$, Frequenz: $f=4.63Hz$\\
+
 
 \section{Diskussion}
 \subsection{Wärmekraftmaschine}
 \subsection{Kältemaschine}
-																								
+Werte für andere Temperaturen haben wir nicht aufgeschrieben: Die Unsicherheiten der Strom- und Spannungsmessungen sind so groß bzw. genauer gesagt der Zeiger auf den analogen Messgeräten schwankt so sehr, dass die Werte für Strom und Spannung sich bei unterschiedlichen Temperaturen nicht sichtbar unterscheiden.
+																						
 \end{document}
