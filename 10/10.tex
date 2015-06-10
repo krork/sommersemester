@@ -59,7 +59,7 @@
 
 			\begin{flushleft}
 			\textbf{\Large{Experiment (Nr., Titel):}}\\
-			PS9, Heißluftmotor - Stirlingprozess
+			PS10, Wärme
 							%Experiment Nr. und Titel statt den Punkten eintragen
 			\LARGE{}	
 			\end{flushleft}
@@ -98,20 +98,32 @@
 \end{verbatim}
 							%Name des Betreuers, das Praktikum betreute.
 			\begin{flushleft}
-			\LARGE{\textbf{Betreuer:\Large{ }}}		
+			\LARGE{\textbf{Betreuer:\Large{ SEPIOL }}}		
 			\end{flushleft}
 			
 \section{Aufgabenstellung}
-
+Wir untersuchen auf verschiedene Arten den Fluss von Wärme durch verschiedene Materalien.
 \section{Theorie}
+\subsection{Isolatoren}
+Ändert sich die Temperatur eines Systems nicht mehr, ist der Wärmefluß in ihm konstant. Kennt man die Temperaturen an verschiedenen Stellen des Systems, kann man aus ihnen und aus dem Wärmefluß, der überall in ihm konstant ist, auf verschiedene Materialeigenschaften wie die Wärmeleitzahl $\lambda$, die Wärmeübergangskoeffizienten $\alpha$ und den Wärmewiderstand $R_\lambda$
+Wir verwenden die Beziehungen:
+
+\( \Phi = \lambda_a \cdot (T_{W1}-T_{W2})= \lambda_b \cdot (T_{W2}-T_{W3}) \)
+
+Wir können diese Beziehung verwenden weil die Platten die gleiche Fläche und Dicke haben. Daraus gewinnen wir für die Wärmeleitzahl unserer Probe:
+
+\( \lambda_b = \lambda_a \cdot \frac{T_{W1}-T_{W2}}{T_{W2}-T_{W3}} \)
+
+
 \subsection{Allgemeine Grundlagen}
 
 
 \section{Aufbau}
 
+\subsection{Isolatoren}
 \section{Durchführung}
 Die Wärmebildkamera hat eine Auflösung von 120x160 Pixel.
-
+\subsection{Isolatoren}
 \section{Ergebnisse}
 \subsection{Wärmeleitfähigkeit von Metallen}
 \subsubsection{Nichtstationärer Wärmestrom}
@@ -152,8 +164,8 @@ Die Platten haben also etwa gleiche Fläche und Dicke, weswegen wir diese im Fol
 \begin{center}
 \begin{tabular}{|l|l|l|l|l|}
 \hline
-Zeit (min) & $T_{Ofen}$ $(^\circ C)$ & $T_{Mess}$ $(^\circ C)
-$& $T_{Ref,1}$ $(^\circ C)$ & $T_{Ref,2}$ $(^\circ C)$\\
+Zeit (min) & $T_{Ofen}$ $(^\circ C)$ & $T_{W3}$ $(^\circ C)
+$& $T_{W1}$ $(^\circ C)$ & $T_{W2}$ $(^\circ C)$\\
 \hline
 0 & 48.1 & 25.7 & 36.9 & 29.6\\
 30 & 56.9 & 28.4 & 43.6 & 34.4\\
@@ -167,6 +179,39 @@ $& $T_{Ref,1}$ $(^\circ C)$ & $T_{Ref,2}$ $(^\circ C)$\\
 \end{center}
 \end{table}
 
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{isol.eps}
+\caption{Erwärmung der Isolatoren}
+\end{center}
+\end{figure}
+
+\( \Phi = \lambda_A \cdot \frac{A}{d} \cdot (T_{W1}-T_{W2}) = 0.16 \frac{W}{m\cdot K} \cdot \frac{0.15^2 m^2}{0.01m} \cdot (54.2 C - 44 C) \)
+
+\( \boxed{ \Phi = 3.672 W }\) 
+
+\( q = \frac{\Phi}{A} = \frac{3.672W}{0.15^2 m^2}=  \boxed{163.2 \frac{W}{m^2}} \)
+
+Wärmeübergangskoeffizient $\alpha_1$:
+
+\( \alpha_1 = \frac{\Phi}{A(T_{W1}-T_{W2})} = \frac{3.672W}{0.15^2 m^2 \cdot 9.8C} \) 
+\( \alpha_1 = \boxed{16.653 \frac{W}{m^{2} \cdot K} } \)
+
+Wärmeleitzahl $\lambda_b$:
+
+\(\lambda_b = \lambda_a \cdot \frac{T_{W1}-T_{W2}}{T_{W2}-T_{W3}} \)
+\(\lambda_b = 0.16 \cdot \frac{54.2C-44C}{44C-33.1C}  = \boxed{ 0.15 \frac{W}{m\cdot K} } \)
+
+Wärmewiderstand $R_\lambda$:
+
+\( R_{\lambda-b} = \frac{1}{\lambda_b}\frac{d_b}{A_b} = \frac{1}{0.15}\frac{0.01}{0.15^2}= \boxed{2.963 \frac{m^2 \cdot K}{W}} \)
+
+Wärmeübergangswiderstand $R_{alpha1}$:
+
+\( R_{alpha1} = \frac{1}{\alpha_1 \cdot A} = \boxed{2.669 \frac{W}{K} }\)
+
 \section{Diskussion}
-																								
+								
+\subsection{Isolatoren}								
+Da wir keine Messung der Temperatur $T_2$, der Temperatur oberhalb der Probeplatte, vorgenommen haben, konnten wir keinen Wärmeübergangskoeffizient $\alpha_2$ und auch keine daraus abgeleiteten Größen, wie den Wärmedurchgangskoeffizienten k oder den Wärmedurchgangswiderstand bestimmen. Es gab aber unserer Meinung nach auch keine Möglichkeit diese Temperatur zu messen, da alle Öffnungen am Plastikgehäuse belegt waren.  								
 \end{document}
