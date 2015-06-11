@@ -58,10 +58,10 @@
 \end{verbatim}
 
 			\begin{flushleft}
-			\textbf{\Large{Experiment (Nr., Titel):}}\\
-			PS10, Wärme
+			\textbf{\Large{Experiment Nr. 10:}}\\
+			
 							%Experiment Nr. und Titel statt den Punkten eintragen
-			\LARGE{}	
+			\LARGE{Wärme}	
 			\end{flushleft}
 
 \begin{verbatim}
@@ -69,7 +69,7 @@
 \end{verbatim}	
 							%Eintragen des Abgabedatums, oder des Erstelldatums des Protokolls
 			\begin{flushleft}
-			\textbf{\Large{Datum:}} \Large{29.5.2015}
+			\textbf{\Large{Datum:}} \Large{5.6.2015}
 			\end{flushleft}
 			
 \begin{verbatim}
@@ -101,20 +101,11 @@
 			\LARGE{\textbf{Betreuer:\Large{ SEPIOL }}}		
 			\end{flushleft}
 			
+\pagebreak
+			
 \section{Aufgabenstellung}
 Wir untersuchen auf verschiedene Arten den Fluss von Wärme durch verschiedene Materalien.
 \section{Theorie}
-\subsection{Isolatoren}
-Ändert sich die Temperatur eines Systems nicht mehr, ist der Wärmefluß in ihm konstant. Kennt man die Temperaturen an verschiedenen Stellen des Systems, kann man aus ihnen und aus dem Wärmefluß, der überall in ihm konstant ist, auf verschiedene Materialeigenschaften wie die Wärmeleitzahl $\lambda$, die Wärmeübergangskoeffizienten $\alpha$ und den Wärmewiderstand $R_\lambda$
-Wir verwenden die Beziehungen:
-
-\( \Phi = \lambda_a \cdot (T_{W1}-T_{W2})= \lambda_b \cdot (T_{W2}-T_{W3}) \)
-
-Wir können diese Beziehung verwenden weil die Platten die gleiche Fläche und Dicke haben. Daraus gewinnen wir für die Wärmeleitzahl unserer Probe:
-
-\( \lambda_b = \lambda_a \cdot \frac{T_{W1}-T_{W2}}{T_{W2}-T_{W3}} \)
-
-
 \subsection{Allgemeine Grundlagen}
 Die drei Hauptsätze der Wärmelehre bilden die Grundlage für die folgenden Experimente:\\
 1. Wärme ist eine Form von Energie: und zwar die thermische Energie, die in der ungeordneten Bewegung der Atome / Moleküle eines Stoffes gespeichert ist.\\
@@ -140,13 +131,22 @@ $$\frac{\partial T}{\partial t}-\frac{\lambda}{\rho c	}\frac{\partial^2 T}{\part
 mit der Temperatur $T$, der Zeit $t$, der Wärmeleitfähigkeit $\lambda$, der Massendichte $\rho$ und der spezifischen Wärmekapazität $c$.
 
 \subsection{Wärmeleitung in Isolatoren}
+Ändert sich die Temperatur eines Systems nicht mehr, ist der Wärmefluß in ihm konstant. Kennt man die Temperaturen an verschiedenen Stellen des Systems, kann man aus ihnen und aus dem Wärmefluß, der überall in ihm konstant ist, auf verschiedene Materialeigenschaften wie die Wärmeleitzahl $\lambda$, die Wärmeübergangskoeffizienten $\alpha$ und den Wärmewiderstand $R_\lambda$
+
 
 \section{Aufbau}
-
+\subsection{Metalle}
+\subsubsection*{Stahl}
+Wir heizen einen Stahlstab auf einer Wärmeplatte auf $\approx 10^\circ C$ über Raumtemperatur - die genaue Temperatur ist nicht so wichtig - und verbinden ihn dann mit Wärmeleitpaste mit einem identischen Stahlstab, der aber Raumtemperatur hat. Unter einer Wärmebildkamera können wir dann den Wärmefluss von einem Stab zum anderen beobachten. Wir starten eine Stoppuhr bei Beginn und stoppen, sobald wir auf der Kamera beobachten dass sich Wärme durch den ganzen Stab ausgebreitet hat. Dann nehmen wir auch das Bild auf und werten es später mit spezieller Software am PC aus, um den Temperaturgradienten und aus ihm die Wärmeleitfähigkeit des Metalls zu bestimmen.
+\subsubsection*{Aluminium}
+Wir verfahren ähnlich beim zweiten Teil, in dem wir allerdings einen Aluminiumstab, der an einem Ende beheizt wird und am anderen Ende mit einer Wärmesenke aus Kupfer verbunden ist, solange heizen, bis sich der Wärmestrom nicht mehr ändert - bis er stationär geworden ist. Dann nehmen wir wieder ein Wärmebild auf und bestimmen aus der gemessenen elektrischen Heizleistung und dem Temperaturgradient die Wärmeleitfähigkeit des Metalls.
 \subsection{Isolatoren}
+In einer isolierten Plastikbox heizen wir von unten solange mit Heizelementen, bis sich konstante Temperaturen in den verschiedenen Schichten von darüber angebrachten Platten einstellen. Eine ist eine Eichplatte, deren Wärmeleitzahl wir kennen, und eine ist eine Probeplatte aus Massivholz, deren Wärmeleitzahl wir bestimmen wollen. Über eingebrachte Temperaturfühler auf allen Ebenen des Aufbaus können wir den Wärmestrom durch die Platten bestimmen und darüber verschiedene materialspezifische Konstanten, wie den Wärmewiderstand oder den Wärmedurchgangskoeffizienten, ermitteln.
 \section{Durchführung}
-Die Wärmebildkamera hat eine Auflösung von 120x160 Pixel.
-\subsection{Isolatoren}
+\subsection*{Metalle}
+Die Wärmebildkamera hat eine Auflösung von 120x160 Pixel, und wir verwenden Wärmeleitpaste um den Wärmefluss zwischen den Metallstäben zu verbessern. Wir verwenden qtiplot um eine Errorfunktion in die Messdaten zu fitten und aus den Fitparametern die Wärmeleitfähigkeit zu erhalten, wobei wir die Dichte und die spezifische Wärmekapazität des Stahls bereits kennen.
+\subsection*{Isolatoren}
+Wir verwenden zur Temperaturmessung 5 Ni-Cr Thermoelemente, die wir abwechselnd an das selbe Multimeter anschließen, das die Thermospannung direkt in Temperaturen umrechnet. Wir messen alle 30 Minuten alle Temperaturen und plotten sie, bis sich ein stationärer Zustand eingestellt hat. Die Temperaturen dieses stationen Zustands verwenden wir dann zur weiteren analytischen Aufbearbeitung der Ergebnisse.
 \section{Ergebnisse}
 \subsection{Wärmeleitfähigkeit von Metallen}
 \subsubsection{Nichtstationärer Wärmestrom}
@@ -168,7 +168,7 @@ Wo die Dichte $\rho = (7480 \pm 350)kg/m^3$ beträgt, die Wärmekapazität $c=(4
 Die Wärmeleitfähigkeit ist also:
 $$\boxed{\lambda = (41.82 \pm 0.52)W/m K}$$
 
-\\
+
 \subsubsection{Stationärer Wärmestrom}
 Der zugeführte Wärmestrom hat den Wert:
 $$\Phi=(12.91 \pm 0.01)V \cdot (0.039 \pm 0.001)A=0.50 \pm 0.01 J/s$$
@@ -196,7 +196,7 @@ Fläche der Messplatte: $A_{Ref}=15.03 \cdot 14.95=(224.7 \pm 0.3)mm^2$\\
 \\
 Die Platten haben also etwa gleiche Fläche und Dicke, weswegen wir diese im Folgenden vernachlässigen können.\\
 
-\begin{table}
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{|l|l|l|l|l|}
 \hline
@@ -215,6 +215,8 @@ $& $T_{W1}$ $(^\circ C)$ & $T_{W2}$ $(^\circ C)$\\
 \end{center}
 \end{table}
 
+Alle Temperaturmessungen haben eine Unsicherheit von $\pm 0.1 ^\circ C$
+
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.5\textwidth]{isol.eps}
@@ -224,30 +226,64 @@ $& $T_{W1}$ $(^\circ C)$ & $T_{W2}$ $(^\circ C)$\\
 
 \( \Phi = \lambda_A \cdot \frac{A}{d} \cdot (T_{W1}-T_{W2}) = 0.16 \frac{W}{m\cdot K} \cdot \frac{0.15^2 m^2}{0.01m} \cdot (54.2 C - 44 C) \)
 
-\( \boxed{ \Phi = 3.672 W }\) 
+\begin{center}
+\( \boxed{ \Phi = 3.7 \pm 0.2 W }\) 
+\end{center}
 
-\( q = \frac{\Phi}{A} = \frac{3.672W}{0.15^2 m^2}=  \boxed{163.2 \frac{W}{m^2}} \)
+
+
+\( q = \frac{\Phi}{A} = \frac{3.672W}{0.15^2 m^2} \)
+
+\begin{center}
+\( \boxed{ q =160 \pm 10 \frac{W}{m^2}} \)
+\end{center}
+
+\pagebreak
 
 Wärmeübergangskoeffizient $\alpha_1$:
 
 \( \alpha_1 = \frac{\Phi}{A(T_{W1}-T_{W2})} = \frac{3.672W}{0.15^2 m^2 \cdot 9.8C} \) 
-\( \alpha_1 = \boxed{16.653 \frac{W}{m^{2} \cdot K} } \)
+
+\begin{center}
+\(\boxed{ \alpha_1 = 17 \pm 2 \frac{W}{m^{2} \cdot K} } \)
+\end{center}
+
 
 Wärmeleitzahl $\lambda_b$:
 
-\(\lambda_b = \lambda_a \cdot \frac{T_{W1}-T_{W2}}{T_{W2}-T_{W3}} \)
-\(\lambda_b = 0.16 \cdot \frac{54.2C-44C}{44C-33.1C}  = \boxed{ 0.15 \frac{W}{m\cdot K} } \)
 
+\(\lambda_b = \lambda_a \cdot \frac{T_{W1}-T_{W2}}{T_{W2}-T_{W3}} \)
+
+\( \lambda_b = 0.16\frac{W}{m\cdot K} \cdot \frac{54.2C-44C}{44C-33.1C} \)
+\begin{equation}
+\boxed{ \lambda_b=  0.15 \pm 0.01 \frac{W}{m\cdot K} } 
+\label{lambdab}
+\end{equation}
 Wärmewiderstand $R_\lambda$:
 
-\( R_{\lambda-b} = \frac{1}{\lambda_b}\frac{d_b}{A_b} = \frac{1}{0.15}\frac{0.01}{0.15^2}= \boxed{2.963 \frac{m^2 \cdot K}{W}} \)
+\( R_{\lambda-b} = \frac{1}{\lambda_b}\frac{d_b}{A_b} = \frac{1}{0.15}\frac{0.01}{0.15^2} \)
+
+\begin{center}
+\(\boxed{R_{\lambda-b} = 3.0 \pm 0.2 \frac{m^2 \cdot K}{W}} \)
+\end{center}
+
+
 
 Wärmeübergangswiderstand $R_{alpha1}$:
 
-\( R_{alpha1} = \frac{1}{\alpha_1 \cdot A} = \boxed{2.669 \frac{W}{K} }\)
+\( R_{alpha1} = \frac{1}{\alpha_1 \cdot A} \)
+\begin{center}
+\( \boxed{ R_{alpha1} = 2.67 \pm 0.04 \frac{W}{K} }\)
+\end{center}
+
 
 \section{Diskussion}
-								
-\subsection{Isolatoren}								
-Da wir keine Messung der Temperatur $T_2$, der Temperatur oberhalb der Probeplatte, vorgenommen haben, konnten wir keinen Wärmeübergangskoeffizient $\alpha_2$ und auch keine daraus abgeleiteten Größen, wie den Wärmedurchgangskoeffizienten k oder den Wärmedurchgangswiderstand bestimmen. Es gab aber unserer Meinung nach auch keine Möglichkeit diese Temperatur zu messen, da alle Öffnungen am Plastikgehäuse belegt waren.  								
+		
+Da in der Formel für (\ref{lambdab}) ein Quotient aus Messgrößen mit $100\%$ korrelierten Unsicherheiten vorkommt, wird die Unsicherheit für $\lambda_b$ sehr klein, sie besteht eigentlich nur mehr aus der relativen Unsicherheit von $\lambda_a$, die mit $0.5\%$ angegeben wurde - für diesen Messwert wäre das $ \pm 0.0075 W/m\cdot K$, was wir aber auf 0.01 gerundet haben.
+						
+Die restlichen Unsicherheiten wurden mit der Gaußschen Fehlerfortpflanzung ermittelt.
+
+Wir glauben übrigens einen Fehler im Anleitungstext gefunden zu haben: bei der Formel für $\lambda_a$ auf Seite 22 (was wir als $\lambda_b$ bezeichnen) sind der Nenner und der Zähler des Bruches vertauscht.
+						
+Da wir keine Messung der Temperatur $T_2$, der Temperatur oberhalb der Probeplatte, vornehmen konnten, haben wir keinen Wärmeübergangskoeffizient $\alpha_2$ und auch keine daraus abgeleiteten Größen, wie den Wärmedurchgangskoeffizienten k bestimmen können. Es gab aber unserer Meinung nach keine Möglichkeit diese Temperatur zu messen, da alle Öffnungen am Plastikgehäuse belegt waren.  								
 \end{document}
