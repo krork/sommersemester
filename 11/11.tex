@@ -60,7 +60,7 @@
 			\begin{flushleft}
 			\textbf{\Large{Experiment (Nr., Titel):}}\\
 							%Experiment Nr. und Titel statt den Punkten eintragen
-			\LARGE{}	
+			\LARGE{11: Hall-Effekt}	
 			\end{flushleft}
 
 \begin{verbatim}
@@ -68,7 +68,7 @@
 \end{verbatim}	
 							%Eintragen des Abgabedatums, oder des Erstelldatums des Protokolls
 			\begin{flushleft}
-			\textbf{\Large{Datum:}} \Large{}
+			\textbf{\Large{Datum:}} \Large{12.06.2015}
 			\end{flushleft}
 			
 \begin{verbatim}
@@ -97,20 +97,119 @@
 \end{verbatim}
 							%Name des Betreuers, das Praktikum betreute.
 			\begin{flushleft}
-			\LARGE{\textbf{Betreuer:\Large{ }}}		
+			\LARGE{\textbf{Betreuer:\Large{ KLEPP }}}		
 			\end{flushleft}
 			
+\pagebreak			
+			
 \section{Aufgabenstellung}
-
+Wir untersuchen verschiedene Größen die beim Halleffekt in Halbleitern auftreten.
 \section{Theorie}
-\subsection{}
+
+Wobei $\rho$ den spezifischen Widerstand bedeutet, l die Länge des Leiterstücks und A seine Querschnittsfläche.
+
+Über die Beziehungen
+
+$$ \sigma = \frac{1}{\rho} $$
+$$ \sigma = n \cdot q \cdot \mu $$
+
+erhalten wir folgenden Ausdruck für $\sigma$:
+
+$$ \sigma = $$
+
+
+Der lineare Fit durch den Plot der Hallspannung gegen die variierte Probenstromstärke $I_{Probe}$ ergibt einen Fitparameter $\alpha$, aus dem wir einen ersten Wert für $R_H$ erhalten:
+
+\begin{equation}
+\label{afit}
+\begin{split}
+U_H(I_{Probe})& = \alpha I \\
+U_H(I_{Probe})& = \frac{R_H B}{d} I \\
+\rightarrow \alpha & = \frac{R_H B}{d} \\
+\rightarrow R_H & = \frac{\alpha d}{B}
+\end{split}
+\end{equation}
+
+Der lineare Fit durch den Plot der Hallspannung in Abhängigkeit der magnetischen Flussdichte liefert uns einen Parameter $\beta$, der sich wie folgt darstellt:
+
+\begin{equation}\label{bfit}
+\begin{split}
+U_H(B)& = R_H \frac{I B}{d} \\
+U_H(B)& = \beta B \\
+\rightarrow \beta & = \frac{I R_H}{d} \\
+\rightarrow R_H & = \frac{\beta d}{I}
+\end{split}
+\end{equation}
+
+
 
 \section{Aufbau}
 
 \section{Durchführung}
+Aus der relativen Unsicherheit des Abstandes zwischen den Polschuhen ($\frac{\Delta d}{d}= \frac{0.2}{10} = 0.02 $ erhalten wir auch die relative Unsicherheit des B-Feldes:  0.02. Dazu kommt aber noch die Unsicherheit durch die Erzeugung des B-Feldes mit dem Netzgerät, die $\pm$ 1 mA beträgt - und die relative Unsicherheit der Relation zwischen der erzeugenden Stromstärke des B-Feldes, die $\frac{0.25}{48.7}$ beträgt. In den Plots und den Fits wurden alle berücksichtigt. 
 
+Für die Unsicherheit der Hallspannung wurde nur die Digitalisierungsunsicherheit des Multimeters berücksichtigt. 
+
+Für zusammengesetzte Unsicherheiten wurde die Gaußsche Fehlerfortpflanzung angewandt.
 \section{Ergebnisse}
 \subsection*{}
+
+Laut (\ref{afit}) gibt qtiplot für $\alpha$:
+
+$$ \alpha = 1.88 \pm 0.05 $$
+
+Daraus mit (\ref{afit}) nach $R_H$:
+
+\begin{center}
+$$ \boxed{ R_H(I_{Probe}) = 0.0125 \pm 0.0006 } $$
+\end{center}
+
+Laut (\ref{bfit}) gibt qtiplot für $\beta$:
+
+$$ \beta =  0.206 \pm 0.006 $$
+
+Daraus erhalten wir mit (\ref{bfit}) für $R_H$:
+
+\begin{center}
+$$ \boxed{ R_H(B) = 0.0082 \pm 0.0005 } $$
+\end{center}
+
+$$ \sigma = $$
+
+Mit $R_H(B)$ berechnetes n: 
+
+$$ n = 7.633 \cdot 10^20 $$
+
+\pagebreak
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.4\textwidth, angle=-90]{probenstrom.eps}
+\caption{Probenstromabhängige Hallspannung}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{subfigure}{0.4\textwidth}
+\includegraphics[width=0.9\linewidth, angle=-90]{npe.eps}
+\caption{n-Ge}
+\end{subfigure}
+\begin{subfigure}{0.4\textwidth}
+\includegraphics[width=0.9\linewidth, angle=-90]{npeumpol.eps}
+\caption{n-Ge mit umgepoltem B-Feld}
+\end{subfigure}
+\\
+\begin{subfigure}{0.4\textwidth}
+\includegraphics[width=0.9\linewidth, angle=-90]{ppe.eps}
+\caption{p-Ge}
+\end{subfigure}
+\begin{subfigure}{0.4\textwidth}
+\includegraphics[width=0.9\linewidth, angle=-90]{ppeumpol.eps}
+\caption{p-Ge mit umgepoltem B-Feld}
+\end{subfigure}
+
+\end{figure}
+
 
 \section{Diskussion}		
 																								
