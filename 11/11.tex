@@ -106,16 +106,26 @@
 Wir untersuchen verschiedene Größen die beim Halleffekt in Halbleitern auftreten.
 \section{Theorie}
 
-Wobei $\rho$ den spezifischen Widerstand bedeutet, l die Länge des Leiterstücks und A seine Querschnittsfläche.
+Aus der Längsspannung am Halbleiter und dem Strom durch ihn ergibt sich der Widerstand R des Leiters.
 
-Über die Beziehungen
+Aus R ergeben sich mit der Länge l und der Fläche A des Leiters der spezifische Widerstand $\rho$ und die Leitfähigkeit $\sigma$:
+
+$$ R = \rho \frac{l}{A} $$
 
 $$ \sigma = \frac{1}{\rho} $$
 $$ \sigma = n \cdot q \cdot \mu $$
 
-erhalten wir folgenden Ausdruck für $\sigma$:
+Damit ergeben sich für $\sigma$ und $\mu$ :
 
-$$ \sigma = $$
+$$ \sigma = \frac{1}{R} \frac{l}{A} $$
+
+$$ \mu = \frac{\sigma}{n \cdot q} $$
+
+n ergibt sich aus der Hallkonsante:
+
+$$ n = -\frac{1}{q\cdot R_H} $$
+
+Wobei q die Elementarladung bedeutet.
 
 
 Der lineare Fit durch den Plot der Hallspannung gegen die variierte Probenstromstärke $I_{Probe}$ ergibt einen Fitparameter $\alpha$, aus dem wir einen ersten Wert für $R_H$ erhalten:
@@ -154,6 +164,24 @@ Für zusammengesetzte Unsicherheiten wurde die Gaußsche Fehlerfortpflanzung ang
 \section{Ergebnisse}
 \subsection*{}
 
+\begin{figure}
+\begin{center}
+
+\includegraphics[width=0.4\linewidth, angle=-90]{widerstand.eps}
+\caption{Widerstandsbestimmung durch linearen Fit}
+\end{center}
+\end{figure}
+
+Aus dem linearen Fit durch die Längsspannung in Abhängigkeit des Probenstroms ergibt sich direkt der Widerstand des Halbleiters als Steigung der Gerade:
+
+$$R = (43.3 \pm 0.5) \Omega $$
+
+$$\rho = (0.02165 \pm 0.00025) \Omega $$
+
+$$\sigma =  46.2 \pm 0.6 $$  
+
+
+
 Laut (\ref{afit}) gibt qtiplot für $\alpha$:
 
 $$ \alpha = 1.88 \pm 0.05 $$
@@ -162,6 +190,12 @@ Daraus mit (\ref{afit}) nach $R_H$:
 
 \begin{center}
 $$ \boxed{ R_H(I_{Probe}) = 0.0125 \pm 0.0006 } $$
+\end{center}
+
+Daraus ergibt sich für n:
+
+\begin{center}
+$$ \boxed{ n_{IProbe} = (5 \pm 0.3) \cdot 10^20  } $$
 \end{center}
 
 Laut (\ref{bfit}) gibt qtiplot für $\beta$:
@@ -174,11 +208,13 @@ Daraus erhalten wir mit (\ref{bfit}) für $R_H$:
 $$ \boxed{ R_H(B) = 0.0082 \pm 0.0005 } $$
 \end{center}
 
+\begin{center}
+$$ \boxed{ n_{B} = (7.6 \pm 0.5) \cdot 10^20  } $$
+\end{center}
+
 $$ \sigma = $$
 
-Mit $R_H(B)$ berechnetes n: 
 
-$$ n = 7.633 \cdot 10^20 $$
 
 \pagebreak
 
