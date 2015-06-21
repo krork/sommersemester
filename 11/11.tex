@@ -174,12 +174,36 @@ Für zusammengesetzte Unsicherheiten wurde die Gaußsche Fehlerfortpflanzung ang
 
 Aus dem linearen Fit durch die Längsspannung in Abhängigkeit des Probenstroms ergibt sich direkt der Widerstand des Halbleiters als Steigung der Gerade:
 
+\begin{center}
+
+
 $$R = (43.3 \pm 0.5) \Omega $$
 
-$$\rho = (0.02165 \pm 0.00025) \Omega $$
+$$\rho = (0.02165 \pm 0.00025) \Omega m^{-1} $$
 
 $$\sigma =  46.2 \pm 0.6 $$  
 
+\end{center}
+\subsection*{Magnetowiderstand}
+Table5: 0,70659142 +/- 0,017301197
+$R_{Rel} = \frac{\Delta R(B)-R(B=0)}{R(B=0)}$
+\begin{table}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+$I_B$ & $R_{Rel}$ \\
+\hline  & $n-Ge \vec{B}$ & $n-Ge -\vec{B}$ & $p-Ge \vec{B}$ & $p-Ge -\vec{B}$ \\
+0.5 & 0.0558 & 0.0586 & 0.3551 & 0.3515 \\ 
+1 & 0.0558 & 0.0586 & 0.3561 & 0.3533 \\ 
+1.5 & 0.0568 & 0.0595 & 0.3588 & 0.3561 \\ 
+2 & 0.0577 & 0.0605 & 0.3625 & 0.3598 \\ 
+2.5 & 0.0586 & 0.0614 & 0.3662 & 0.3644 \\ 
+3 & 0.0605 & 0.0632 & 0.3718 & 0.3699 \\ 
+3.5 & 0.0623 & 0.0642 & 0.3764 & 0.3755 \\ 
+4 & 0.0642 & 0.0660 & 0.3819 & 0.3810 \\ 
+4.5 & 0.0660 & 0.0678 & 0.3884 & 0.3866 \\ 
+
+\end{tabular}
+\end{table}
 
 
 Laut (\ref{afit}) gibt qtiplot für $\alpha$:
@@ -195,7 +219,7 @@ $$ \boxed{ R_H(I_{Probe}) = 0.0125 \pm 0.0006 } $$
 Daraus ergibt sich für n:
 
 \begin{center}
-$$ \boxed{ n_{IProbe} = (5 \pm 0.3) \cdot 10^20  } $$
+$$ \boxed{ n_{IProbe} = (5.0 \pm 0.3) \cdot 10^{20}  } $$
 \end{center}
 
 Laut (\ref{bfit}) gibt qtiplot für $\beta$:
@@ -209,7 +233,7 @@ $$ \boxed{ R_H(B) = 0.0082 \pm 0.0005 } $$
 \end{center}
 
 \begin{center}
-$$ \boxed{ n_{B} = (7.6 \pm 0.5) \cdot 10^20  } $$
+$$ \boxed{ n_{B} = (7.6 \pm 0.5) \cdot 10^{20}  } $$
 \end{center}
 
 $$ \sigma = $$
@@ -243,10 +267,32 @@ $$ \sigma = $$
 \includegraphics[width=0.9\linewidth, angle=-90]{ppeumpol.eps}
 \caption{p-Ge mit umgepoltem B-Feld}
 \end{subfigure}
+\end{figure}
 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.4\textwidth, angle=-90]{widerstand.eps}
+\caption{Probenspannung gegen Strom, die Steigung ist der Widerstand }
+\end{center}
+\end{figure}
+
+
+\begin{figure}
+\begin{subfigure}{0.4\textwidth}
+\includegraphics[width=0.9\linewidth, angle=-90]{magneton.eps}
+\caption{Magnetowiderstand an n-Ge}
+\end{subfigure}
+\begin{subfigure}{0.4\textwidth}
+\includegraphics[width=0.9\linewidth, angle=-90]{magnetop.eps}
+\caption{Magnetowiderstand an p-Ge}
+\end{subfigure}
+\caption{Längsspannung gegen $B^2$}
 \end{figure}
 
 
 \section{Diskussion}		
+
+Durch Auftragung der Längsspannung gegen das Quadrat der Magnetischen Flussdichte, wie das erweiterte Modell vorhersagt, erkennt man sofort den Magnetowiderstand: Die Werte liegen auf einer Geraden.
 																								
 \end{document}
