@@ -1,0 +1,7 @@
+﻿MIN=0	-10	-1000
+MAX=100	10	1000
+SCALE=100	5	500
+DEC=0	2	0
+DEF="Zeit" t / s	"Kraft" F_B1 / mN	"Magn. Flussdichte" B_A1 / mT
+0	-0,47	126,5
+0	-0,87	124,5
